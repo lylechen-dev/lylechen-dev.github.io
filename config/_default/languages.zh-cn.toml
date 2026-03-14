@@ -1,0 +1,22 @@
+languageCode = "zh-cn"
+languageName = "简体中文"
+weight = 9
+title = "尘.迹."
+
+[params]
+  displayName = "简体中文"
+  isoCode = "zh-cn"
+  rtl = false
+  dateFormat = "2006-01-02"
+  logo = "img/logo.png"
+  description = "一个强大、轻量级的 Hugo 主题。"
+
+[params.author]
+  name = "尘."
+  image = "img/avatar.png"
+  headline = "不可妄测观者之心，唯守心中之正，行己之所信。"
+  bio = "不可妄测观者之心，唯守心中之正，行己之所信。"
+  links = [
+    #{ x-twitter = "https://twitter.com/burufugu" },
+    #{ github = "https://github.com/nunocoracao/blowfish" },
+  ]
