@@ -71,12 +71,12 @@
 # The footer menu is displayed at the bottom of the page, just before
 # the copyright notice. Configure as per the main menu above.
 
- [[footer]]
-   name = "索引"
-   pageRef = "tags"
-   weight = 10
+ #[[footer]]
+ #  name = "索引"
+ #  pageRef = "tags"
+ #  weight = 10
 
- [[footer]]
-   name = "作者"
-   pageRef = "authors"
-   weight = 20
+ #[[footer]]
+ #  name = "作者"
+ #  pageRef = "authors"
+ #  weight = 20
