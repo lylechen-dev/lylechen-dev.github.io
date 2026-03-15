@@ -171,10 +171,10 @@
     
     <item>
       <title>多列布局</title>
-      <link>http://localhost:1313/posts/web%E5%89%8D%E7%AB%AF%E7%AC%94%E8%AE%B0/%E5%A4%9A%E5%88%97%E5%B8%83%E5%B1%80/inedx/</link>
+      <link>http://localhost:1313/posts/web%E5%89%8D%E7%AB%AF%E7%AC%94%E8%AE%B0/%E5%A4%9A%E5%88%97%E5%B8%83%E5%B1%80/inedex/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/web%E5%89%8D%E7%AB%AF%E7%AC%94%E8%AE%B0/%E5%A4%9A%E5%88%97%E5%B8%83%E5%B1%80/inedx/</guid>
+      <guid>http://localhost:1313/posts/web%E5%89%8D%E7%AB%AF%E7%AC%94%E8%AE%B0/%E5%A4%9A%E5%88%97%E5%B8%83%E5%B1%80/inedex/</guid>
       <description>&lt;p&gt;在写微信小程序的时候就非常喜欢使用多列的布局模式，当时觉得&lt;code&gt;flex&lt;/code&gt;布局不好看，特地在里面嵌套了一个&lt;code&gt;grid&lt;/code&gt;布局让其更整洁。但是现在学了多列布局，虽然整体上不如&lt;code&gt;flex&lt;/code&gt; 和&lt;code&gt;grid&lt;/code&gt; 写的舒服和快捷，但是我还是觉得这个布局还是有一定的用武之处，比如考试。&lt;/p&gt;</description>
       
     </item>
