@@ -38,6 +38,11 @@
   pageRef = "categories/Linux探索日志"
   weight = 15
 
+[[main]]
+  name = "站述"
+  pageRef = "pages/站述"
+  weight = 20
+
 #[[main]]
 #  name = "Test"
 #  pageRef = "pagTest"
