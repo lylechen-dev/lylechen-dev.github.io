@@ -9,35 +9,35 @@ categories: ["Linux探索日志"]
 
 ### 磁盘分区
 
-![PixPin_2025-07-21_17-55-56](/posts/debian13安装/assets/PixPin_2025-07-21_17-55-56.png)
+![PixPin_2025-07-21_17-55-56](/posts/linux探索日志/debian13安装/assets/PixPin_2025-07-21_17-55-56.png)
 
 这里比Debian12多出了更多的选项，小于10GB硬盘的有单独的模式，这个就非常考虑老旧的硬件。
 
 ### 软件源
 
-![PixPin_2025-08-10_10-02-08](/posts/debian13安装/assets/PixPin_2025-08-10_10-02-08.png)
+![PixPin_2025-08-10_10-02-08](/posts/linux探索日志/debian13安装/assets/PixPin_2025-08-10_10-02-08.png)
 
 相较于之前的软件源，这次多了neusoft和nyist两个新的软件源，分别是南阳理工大学和东软公司。但是镜像源的第一梯队还是清华（tsinghua）和中科大（ustc）比较稳定。我更推荐[USTC](https://mirrors.ustc.edu.cn/help/debian.html)的,里面注释掉了很多不稳定的，比如新的backports，也许只是适合服务器，但是对于我这种不喜欢更新的人来说还是非常好的，毕竟你也不知道更新之后会多什么新功能，哪里有什么问题，所以之前用什么，现在就用什么就很好了。
 
 ### 桌面环境
 
-![PixPin_2025-08-10_10-03-38](/posts/debian13安装/assets/PixPin_2025-08-10_10-03-38.png)
+![PixPin_2025-08-10_10-03-38](/posts/linux探索日志/debian13安装/assets/PixPin_2025-08-10_10-03-38.png)
 
 新增了一个定制的选项放在最下面，也就是**`Choose a Denian Blend for installation`**选项，这个定制选项对于正常使用的帮助不大，可以适当了解一下：
 
-![image-20250810132648949](/posts/debian13安装/assets/image-20250810132648949.png)
+![image-20250810132648949](/posts/linux探索日志/debian13安装/assets/image-20250810132648949.png)
 
 ### 剩余时间计算
 
 这次的剩余时间计算相对来说准确了不少，已经能够正常显示，不会动不动就出现1天甚至5，6个小时的情况出现，这个是我正常选择完xfce桌面之后的安装情况截图：
 
-![PixPin_2025-08-10_10-04-20](/posts/debian13安装/assets/PixPin_2025-08-10_10-04-20.png)
+![PixPin_2025-08-10_10-04-20](/posts/linux探索日志/debian13安装/assets/PixPin_2025-08-10_10-04-20.png)
 
 ### 进入系统
 
 Debian12再安装完成之后通常要手动点击重启之后才会进入系统，所以比较麻烦，但是Debian13现在安装完成之后可以正常自动重启进入系统，不需要再像之前一样盯着
 
-![0810](/posts/debian13安装/assets/0810.gif)
+![0810](/posts/linux探索日志/debian13安装/assets/0810.gif)
 
 ## 体验
 
