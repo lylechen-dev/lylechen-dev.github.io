@@ -23,10 +23,10 @@ categories: ["零碎随笔"]
 
 手机连接电脑，选择刚刚解压缩的刷机包，选项如图所示（**注：我这里并未连接设备，所以未显示设备连接**）：
 
-![image-20251208225923390](/posts/零碎随笔/Redmi_Note_12T_Pro刷PixelOS/assets/image-20251208225923390.png)
+![image-20251208225923390](/posts/零碎随笔/redmi_note_12t_pro刷pixelos/assets/image-20251208225923390.png)
 
 点击刷机后静待开机即可。
 
 ## 效果预览
 
-![20251208-230945](/posts/零碎随笔/assets/20251208-230945.png)
+![20251208-230945](/posts/零碎随笔/redmi_note_12t_pro刷pixelos/assets/20251208-230945.png)

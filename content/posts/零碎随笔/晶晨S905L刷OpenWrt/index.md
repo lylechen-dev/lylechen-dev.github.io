@@ -9,7 +9,7 @@ categories: ["零碎随笔"]
 
 **项目源地址如下，点击图片即可跳转：**
 
-[![image-20260119220740295](/posts/零碎随笔/晶晨S905L刷OpenWrt/assets/image-20260119220740295.png)](https://github.com/ophub/amlogic-s9xxx-openwrt)
+[![image-20260119220740295](/posts/零碎随笔/晶晨s905l刷openwrt/assets/image-20260119220740295.png)](https://github.com/ophub/amlogic-s9xxx-openwrt)
 
 在release页面中找到自己要的OpenWrt系统和对应的芯片型号，下载压缩包并解压。我个人更喜欢纯净的**OpenWrt_openwrt_main_save**这个版本，但是**OpenWrt_immortalwrt_master_save**这个版本会更易用一些。
 
@@ -33,6 +33,6 @@ categories: ["零碎随笔"]
 3. 打开机顶盒，进入安卓系统，在路由器后台管理界面获取机顶盒的IP地址。
 4. 解压adbcmd压缩包，运行bat脚本，输入机顶盒的IP地址，在安卓系统关机的一瞬间插入写好的U盘。
 5. 其默认的IP地址是192.168.1.1，如果和家庭网络设备有冲突的情况下，可以用网线将盒子连接到电脑，电脑输入IP进入后台管理界面。
-6. 进入安装界面：System - Amlogic Service - Install OpenWrt![image-20260124161455622](/posts/零碎随笔/晶晨S905L刷OpenWrt/assets/image-20260124161455622.png)
-7. 如何去选择这个model还是需要去看看Armbian里面的dtb文件的序号，没有上面具体型号，但是CPU是晶晨的S905L的可以参考我的，选择116。![IMG_20260118_194035](/posts/零碎随笔/晶晨S905L刷OpenWrt/assets/IMG_20260118_194035.jpg)
+6. 进入安装界面：System - Amlogic Service - Install OpenWrt![image-20260124161455622](/posts/零碎随笔/晶晨s905l刷openwrt/assets/image-20260124161455622.png)
+7. 如何去选择这个model还是需要去看看Armbian里面的dtb文件的序号，没有上面具体型号，但是CPU是晶晨的S905L的可以参考我的，选择116。![IMG_20260118_194035](/posts/零碎随笔/晶晨s905l刷openwrt/assets/IMG_20260118_194035.jpg)
 8. 等待其提醒安装完成后，不要拔掉U盘，重启，等能进系统之后再拔掉U盘。

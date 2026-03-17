@@ -1,4 +1,4 @@
----
+---Windows系统重装
 title: Windows系统重装
 categories: ["零碎随笔"]
 ---
@@ -22,15 +22,15 @@ categories: ["零碎随笔"]
 
 打开WePE软件，点击红框中的选项：
 
-![image-20250906214520032](/posts/零碎随笔/Windows系统重装/assets/image-20250906214520032.png)
+![image-20250906214520032](/posts/零碎随笔/windows系统重装/assets/image-20250906214520032.png)
 
 在待写入U盘的地方选择准备好的空U盘（**或**刚刚已经备份好数据的U盘），这个过程会将U盘的数据全部清除，注意**备份**：
 
-![image-20250906214606058](/posts/零碎随笔/Windows系统重装/assets/image-20250906214606058.png)
+![image-20250906214606058](/posts/零碎随笔/windows系统重装/assets/image-20250906214606058.png)
 
 **这个时候，资源管理器上会出现一个空的微PE工具箱，打开并将系统镜和电脑驱动程序放入PE：**
 
-![image-20250906221636954](/posts/零碎随笔/Windows系统重装/assets/image-20250906221636954.png)
+![image-20250906221636954](/posts/零碎随笔/windows系统重装/assets/image-20250906221636954.png)
 
 ## 进入PE，安装系统
 
@@ -38,15 +38,15 @@ categories: ["零碎随笔"]
 
 MBR：
 
-![image-20250906222030355](/posts/零碎随笔/Windows系统重装/assets/image-20250906222030355.png)
+![image-20250906222030355](/posts/零碎随笔/windows系统重装/assets/image-20250906222030355.png)
 
 GPT（不管保留ESP分区显不显示，都按照这个方法）：
 
-![image-20250906222155432](/posts/零碎随笔/Windows系统重装/assets/image-20250906222155432.png)
+![image-20250906222155432](/posts/零碎随笔/windows系统重装/assets/image-20250906222155432.png)
 
 **使用WinNTSetup安装镜像（按照提示选择就可以）：**
 
-![image-20250906222509009](/posts/零碎随笔/Windows系统重装/assets/image-20250906222509009.png)
+![image-20250906222509009](/posts/零碎随笔/windows系统重装/assets/image-20250906222509009.png)
 
 ## 最后
 

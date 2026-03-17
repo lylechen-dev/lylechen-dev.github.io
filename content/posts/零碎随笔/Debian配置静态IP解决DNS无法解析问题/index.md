@@ -1,5 +1,5 @@
 ---
-title: Debian配置静态IP，DNS无法解析问题
+title: Debian配置静态IP解决DNS无法解析问题
 categories: ["零碎随笔"]
 ---
 
@@ -33,7 +33,7 @@ iface enp3s5 inet static
 
 **这个时候出现了这样的一个问题：**
 
-![Image_1766068041105](/posts/零碎随笔/debian配置静态ip_dns无法解析问题/assets/Image_1766068041105.jpg)
+![Image_1766068041105](/posts/零碎随笔/debian配置静态ip解决dns无法解析问题/assets/Image_1766068041105.jpg)
 
 DNS服务器应该是没有任何问题的才对，为此我还特地检查了`dns-nameservers`的拼写，但是很遗憾不是的。
 
