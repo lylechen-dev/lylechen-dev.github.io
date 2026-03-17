@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', function () {
   // 友链数据（自己替换 logo 地址）
   const links = [
     { name: "云泽の小屋", desc: "最好的朋友，他的博客是世界上最详细网络安全实践笔记！", url: "https://zeyun.dpdns.org", logo: "https://zeyun.dpdns.org/media/website/Happy_Mac.png" },
-    { name: "猪老师在线", desc: "我最喜欢的老师，网络安全没人比他讲的更好！", url: "https://www.pigteacher.com", logo: "https://www.pigteacher.com/wp-content/uploads/2025/01/cropped-1-128x128.jpg" },
+    { name: "猪老师在线", desc: "最喜欢的老师，网络安全没人比他讲的更好！", url: "https://www.pigteacher.com", logo: "https://www.pigteacher.com/wp-content/uploads/2025/01/cropped-1-128x128.jpg" },
     // { name: "设计工坊", desc: "美学与创意聚集地", url: "#", logo: "https://via.placeholder.com/32" },
     // { name: "旅行日记", desc: "走遍山川湖海", url: "#", logo: "https://via.placeholder.com/32" },
     // { name: "阅读空间", desc: "文字与思想的旅途", url: "#", logo: "https://via.placeholder.com/32" },
