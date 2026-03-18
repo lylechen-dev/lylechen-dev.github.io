@@ -43,7 +43,7 @@ hugo new site [你网站的名字]
 
 **下载主题**
 
-打开**[Hugo官方主题商店](https://themes.gohugo.io/)**选择自己喜欢的主题，去到官方GitHub项目页面下载即可。[`Blowfish`主题点我下载](https://github.com/nunocoracao/blowfish)即可。
+打开 **[Hugo官方主题商店](https://themes.gohugo.io/)** 选择自己喜欢的主题，去到官方GitHub项目页面下载即可。[`Blowfish`主题点我下载](https://github.com/nunocoracao/blowfish)即可。
 
 **如此方法下载：**
 
