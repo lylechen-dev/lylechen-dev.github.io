@@ -11,7 +11,7 @@ categories: ["零碎随笔"]
 
 偶然间，发现了VS   Codium，这是一个开源版本的VS Code，插件源都是开源的。虽然少了很多VS Code上面好多闭源的功能，但是换得了更小的体积和更自由的定制方案。
 
-[![image-20250811181424324](/posts/零碎随笔/llvm_vs_codium搭建c语言开发环境/assets/image-20250811181424324.png)](https://bgithub.xyz/VSCodium/vscodium/releases)
+[![image-20250811181424324](/posts/零碎随笔/llvm+vs_codium搭建c语言开发环境/assets/image-20250811181424324.png)](https://bgithub.xyz/VSCodium/vscodium/releases)
 
 我最不喜欢的就是VS Code那每次启动都需要更新，所以我更愿意选择***[updates disable](https://bgithub.xyz/VSCodium/vscodium/releases/download/1.103.05312/VSCodium-x64-updates-disabled-1.103.05312.msi)***的版本
 
