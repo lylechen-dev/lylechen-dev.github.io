@@ -66,11 +66,11 @@ networks:
 
 之后重新进入后点击左侧的SSL/TLS证书页面，添加证书，填入自己的域名和token，需要更改的地方更改如下：
 
-![image-20260103183054505](/posts/零碎随笔/Lucky_Nginx实现公网域名访问家庭NAS/assets/image-20260103183054505.png)
+![image-20260103183054505](/posts/零碎随笔/lucky_nginx实现公网域名访问家庭nas/assets/image-20260103183054505.png)
 
 最后添加证书映射：
 
-![image-20260103183212721](/posts/零碎随笔/Lucky_Nginx实现公网域名访问家庭NAS/assets/image-20260103183212721.png)
+![image-20260103183212721](/posts/零碎随笔/lucky_nginx实现公网域名访问家庭nas/assets/image-20260103183212721.png)
 
 格式如下：`/var/lib/lucky/certs/[your.domain.com`
 
@@ -139,4 +139,4 @@ server {
 
 下载并导入证书：
 
-![image-20260103182917908](/posts/零碎随笔/Lucky_Nginx实现公网域名访问家庭NAS/assets/image-20260103182917908.png)
+![image-20260103182917908](/posts/零碎随笔/lucky_nginx实现公网域名访问家庭nas/assets/image-20260103182917908.png)
