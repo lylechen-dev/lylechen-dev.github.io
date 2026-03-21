@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', function () {
     { name: "云泽の小屋", desc: "最好的朋友，他的博客是世界上最详细网络安全实践笔记！", url: "https://zeyun.dpdns.org", logo: "https://zeyun.dpdns.org/media/website/Happy_Mac.png" },
     { name: "猪老师在线", desc: "最有趣的老师，网络安全没人比他讲的更好！", url: "https://www.pigteacher.com", logo: "https://www.pigteacher.com/wp-content/uploads/2025/01/cropped-1-180x180.jpg" },
     { name: "云泽の小屋-网站推荐", desc: "优秀网站的收藏夹", url: "https://zeyun.dpdns.org/good_web.html", logo: "https://zeyun.dpdns.org/media/website/Happy_Mac.png" },
-    { name: "Quick Reference", desc: "自己部署的Quick Reference竞相站，感觉里面东西速查挺方便的", url: "https://ref.lylebox.dpdns.org:8443/", logo: "https://ref.lylebox.dpdns.org:8443/icons/touch-icon-iphone-retina.png" },
+    { name: "Quick Reference", desc: "自己部署的Quick Reference镜像站，感觉里面东西速查挺方便的", url: "https://ref.lylebox.dpdns.org:8443/", logo: "https://ref.lylebox.dpdns.org:8443/icons/touch-icon-iphone-retina.png" },
     // { name: "阅读空间", desc: "文字与思想的旅途", url: "#", logo: "https://via.placeholder.com/32" },
     // { name: "摄影集", desc: "定格每一刻温柔", url: "#", logo: "https://via.placeholder.com/32" }
   ];
