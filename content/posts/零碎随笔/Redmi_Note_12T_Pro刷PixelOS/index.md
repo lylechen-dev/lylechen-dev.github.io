@@ -1,6 +1,7 @@
 ---
 title: Redmi Note 12T Pro刷PixelOS
 categories: ["零碎随笔"]
+date: 2026-03-15
 ---
 
 **准备工具：**

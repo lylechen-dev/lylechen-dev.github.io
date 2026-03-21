@@ -1,6 +1,7 @@
 ---
 title: "transfrom属性是元素位移及形变"
 categories: ["Web前端笔记"]
+date: 2026-03-15
 ---
 
 ## transform格式

@@ -1,6 +1,7 @@
 ---
 title: Debian配置静态IP解决DNS无法解析问题
 categories: ["零碎随笔"]
+date: 2026-03-15
 ---
 
 ## 配置静态IP

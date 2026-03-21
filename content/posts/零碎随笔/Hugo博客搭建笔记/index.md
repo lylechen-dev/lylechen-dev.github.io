@@ -1,6 +1,7 @@
 ---
 title: Hugo博客搭建笔记
 categories: ["零碎随笔"]
+date: 2026-03-18
 ---
 
 ## 概述
