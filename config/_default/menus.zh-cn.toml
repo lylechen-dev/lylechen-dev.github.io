@@ -33,6 +33,12 @@
   weight = 15
 
 [[main]]
+  name = "系统基础笔记"
+  parent = "索引"
+  pageRef = "categories/系统基础笔记"
+  weight = 15
+
+[[main]]
   name = "Linux探索日志"
   parent = "索引"
   pageRef = "categories/Linux探索日志"
