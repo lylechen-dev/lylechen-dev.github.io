@@ -1,5 +1,5 @@
 ---
-title: 在网页与JavaScript
+title: 网页与JavaScript
 categories: ["Web前端笔记"]
 date: 2026-03-21
 ---
