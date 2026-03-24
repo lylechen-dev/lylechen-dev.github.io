@@ -1,5 +1,5 @@
 ---
-title: Debian12+i3-wm 认识系统组件
+title: Debian12+i3-wm
 categories: ["Linux探索日志"]
 date: 2026-03-15
 ---

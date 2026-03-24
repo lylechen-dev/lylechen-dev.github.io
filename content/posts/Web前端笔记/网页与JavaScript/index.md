@@ -14,13 +14,13 @@ date: 2026-03-21
 
 没啥用，也就是Markdown博客会用到，项目里面不会用的，记不住后面直接搜索就行。
 
-```javascript
+```html
 <button onclick="alert('你点我啦！')">点我</button>
 ```
 
 ### 内嵌式
 
-```javascript
+```html
 <script>
   // 内部脚本
   console.log("我是内部 JS");
@@ -30,7 +30,7 @@ date: 2026-03-21
 
 ### 外链式
 
-```javascript
+```html
 <script src="main.js"></script>
 ```
 
