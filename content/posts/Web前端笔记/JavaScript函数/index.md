@@ -226,7 +226,6 @@ https://cdn.jsdelivr.net/npm/p5@1/lib/p5.min.js
                 let runy = 10;
                 let ballx = 100;
                 let bally = 100;
-                let
 		        // p5.js draw函数 - 动画循环
 		        function draw() {
 		            // 绘制红色小球
