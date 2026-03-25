@@ -133,7 +133,7 @@ https://cdn.jsdelivr.net/npm/p5@1/lib/p5.min.js
 
 触边，最简单就是定义x轴和y轴的变量，与初始画布的大小进行对比，如果大于等于边框，或者小于等于边框就就将移动变为反向。
 
-```javascript
+```html
 <!DOCTYPE html>
 <html>
 	<head>
@@ -193,7 +193,7 @@ https://cdn.jsdelivr.net/npm/p5@1/lib/p5.min.js
 
 问AI后还是有没看出来的问题，小球按照这个算法是中心点碰边，而半径3厘米没考虑进去，所以AI改成了
 
-```javascript
+```html
 <!DOCTYPE html>
 <html>
 	<head>
@@ -252,7 +252,7 @@ https://cdn.jsdelivr.net/npm/p5@1/lib/p5.min.js
 
 我想了想这样不行啊，改了直径还是会出事，所以直接这样
 
-```javascript
+```html
 <!DOCTYPE html>
 <html>
 	<head>
@@ -322,7 +322,7 @@ https://cdn.jsdelivr.net/npm/p5@1/lib/p5.min.js
 
 源码是这样的
 
-```javascript
+```html
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
