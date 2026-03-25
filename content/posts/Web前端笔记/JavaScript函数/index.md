@@ -127,7 +127,7 @@ https://cdn.jsdelivr.net/npm/p5@1/lib/p5.min.js
 <iframe srcdoc="<!DOCTYPE html><html><head><meta charset=utf-8><style>body{display:flex;justify-content:center;align-items:center;height:100vh;margin:0;background:#f0f0f0;}</style></head><body><script src=https://cdn.jsdelivr.net/npm/p5@1/lib/p5.min.js></script><script>function setup(){createCanvas(800,600);background(0,0,255)}function draw(){fill(255,0,0);noStroke();circle(400,300,60)}</script></body></html>" width="840" height="640" style="border:none;"></iframe>
 
 
-所以说这里没有任何调用，直接是写方法，调用直接交给`p5`这个库去做，也确实是没什么逻辑，调用本身就是应该在主程序执行的，这逻辑也是没谁了。但是说归说，还是要写东西的，所以先讲讲我对于最后一个思考的思路。
+所以说这里没有任何调用，直接是写方法，调用直接交给`p5`这个库去做，也确实是没什么逻辑，调用本身就是应该在主程序执行的，这逻辑也是没谁了。其实还有更抽象的，估计后端的都理解，就是这玩意`draw()`函数是自己重复执行的，所以我特地写的`while()`和`do……while()`直接没作用，关键是我变量是直接放在函数内的，就是没料到这东西智能到会自己重复循环。但是说归说，还是要写东西的，所以先讲讲我对于最后一个思考的思路。
 
 ### 题解
 
