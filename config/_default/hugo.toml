@@ -7,6 +7,8 @@ baseURL = "https://lyle.qzz.io"
 defaultContentLanguage = "zh-cn"
 disableLanguages = [] #to allow translation work requiring shipping to production
 
+timeZone = "Asia/Shanghai"
+
 # pluralizeListTitles = "true" # hugo function useful for non-english languages, find out more in  https://gohugo.io/getting-started/configuration/#pluralizelisttitles
 
 enableRobotsTXT = true
@@ -70,7 +72,7 @@ googleAnalytics = "G-PEDMYR1V0K"
       type = 'fragments'
       weight = 10
 
-# Render only specific parts of the site for faster development. 
+# Render only specific parts of the site for faster development.
 # Note that there are more files are ignored in development/hugo.toml
 #
 # Usage: `hugo --renderSegments core` or `hugo --renderSegments core,en_only`
