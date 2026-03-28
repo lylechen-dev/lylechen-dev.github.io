@@ -1,5 +1,5 @@
 ---
-title:AI使用思考
+title: AI使用思考
 categories: ["零碎随笔"]
 date: 2026-03-28
 ---
