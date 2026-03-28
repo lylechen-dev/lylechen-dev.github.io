@@ -62,7 +62,7 @@ console.log(final);
 
 在案例里面尤其突出，案例使用`p5.js`，直接外链就行
 
-```http
+```text
 https://cdn.jsdelivr.net/npm/p5@1/lib/p5.min.js
 ```
 
