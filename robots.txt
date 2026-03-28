@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://lyle.qzz.io/sitemap.xml
