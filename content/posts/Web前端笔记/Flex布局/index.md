@@ -49,7 +49,7 @@ date: 2026-03-15
 - `space-around`：每个项目两侧的间隔相等，项目到边距的间距是两个项目的一半
 - `space-evenly`：每个项目之间，项目和边距之间相等
 
-### `align-items`：
+### `align-items`
 
 - `stretch`（**默认值**）：默认拉伸填满整个容器
 - `flex-start`：交叉轴的起点对齐
@@ -214,4 +214,4 @@ input:valid:focus {
 </html>
 ```
 
-[**更多见Reference教程**](https://reference.lyle.qzz.io/docs/css.html#css-flexbox)
+[**更多见Reference教程**](https://ref.lyle.qzz.io/docs/css.html#css-flexbox)
