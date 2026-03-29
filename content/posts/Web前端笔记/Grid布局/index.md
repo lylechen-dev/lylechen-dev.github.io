@@ -155,9 +155,9 @@ date: 2026-03-15
 }
 ```
 
-#### `grid-cloumn`
+#### `grid-column`
 
-这也是一个复合属性，由两个属性组成，分别是`grid-cloumn-start`和`grid-cloumn-end`组成，写法如下：
+这也是一个复合属性，由两个属性组成，分别是`grid-column-start`和`grid-column-end`组成，写法如下：
 
 ```css
 .grid-item {
