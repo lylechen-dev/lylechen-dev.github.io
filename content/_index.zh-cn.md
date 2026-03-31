@@ -3,31 +3,40 @@ title: "欢迎来到 Blowfish! :tada:"
 description: "此页面是使用 Hugo 的 Blowfish 主题搭建的"
 ---
 
-<!-- <div id="typing-text" style="background-color: transparent; min-height: 1.5em; font-size: 18px; font-weight: bold; text-align: left;"></div>
+<!--<div id="typing-text" style="background-color: transparent; min-height: 2em; font-size: 16px; font-weight: bold; text-align: left; margin: 10px 0 30px;"></div>
 
 <script>
 document.addEventListener('DOMContentLoaded', function () {
-  const message = "致我们：\n愿我们都能在各自感兴趣的事情上找到更好的自己！\n\n尘.";
+  // 这里换成你最终想写的文字
+  const message = "志趣相投，\n便有了你们。愿我们各自闪耀，彼此照亮！\n\n 墨.";
   const element = document.getElementById("typing-text");
   let index = 0;
 
-  // 光标
   const cursor = document.createElement('span');
   cursor.classList.add('typing-cursor');
   cursor.textContent = '|';
   element.appendChild(cursor);
 
-  // 光标样式
   const style = document.createElement('style');
   style.textContent = `
+    #typing-text {
+      font-size: 17px;       /* 比友链标题稍大一点，更突出 */
+      font-weight: 500;      /* 不要太粗，更协调 */
+      line-height: 1.7;      /* 换行更舒服 */
+      color: #1f2937;        /* 浅色模式文字 */
+    }
+    html.dark #typing-text {
+      color: #e5e7eb;        /* 深色模式文字 */
+    }
     .typing-cursor {
       opacity: 1;
       animation: blink 1s infinite;
-      margin-left: 2px;
+      margin-left: 3px;
+      font-weight: 400;
     }
     @keyframes blink {
       0%, 100% { opacity: 1; }
-      50% { opacity: 0; }
+      50%  { opacity: 0; }
     }
   `;
   document.head.appendChild(style);
@@ -35,19 +44,14 @@ document.addEventListener('DOMContentLoaded', function () {
   function typeWriter() {
     if (index < message.length) {
       const currentChar = message.charAt(index);
-
       if (currentChar === '\n') {
-        const br = document.createElement('br');
-        element.insertBefore(br, cursor);
+        element.insertBefore(document.createElement('br'), cursor);
       } else {
-        const char = document.createTextNode(currentChar);
-        element.insertBefore(char, cursor);
+        element.insertBefore(document.createTextNode(currentChar), cursor);
       }
-
       index++;
-      setTimeout(typeWriter, 150);
+      setTimeout(typeWriter, 140);
     } else {
-      // 结束后隐藏光标
       cursor.style.animation = 'none';
       cursor.style.opacity = '0';
     }
@@ -55,7 +59,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
   setTimeout(typeWriter, 500);
 });
-</script> -->
+</script>-->
+
 
 <div id="friends-links" style="margin: 20px 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 16px;"></div>
 
