@@ -16,7 +16,7 @@ date: 2026-04-04
 
 ## 计划拟定
 
-{{< timeline >}} {{< timelineItem icon="server" header="1. 重装系统" subheader="fnnos" >}} 给AMD台式机重装 fnnos 系统 {{< /timelineItem >}} {{< timelineItem icon="hard-drive" header="2. 扩容存储" subheader="140G + 新增 1T 硬盘" >}} 在原有 140G 磁盘基础上接入 1T 硬盘 {{< /timelineItem >}} {{< timelineItem icon="user" header="3. 迁移个人账户数据" subheader="迁移至 1T 硬盘" >}} 将本人账户数据转移至新 1T 硬盘 {{< /timelineItem >}} {{< timelineItem icon="users" header="4. 迁移其他用户数据" subheader="迁移至原 NAS 机械硬盘" >}} 将其他用户数据转移至原 NAS 机械硬盘 {{< /timelineItem >}} {{< timelineItem icon="refresh" header="5. 重新挂载至新 NAS" subheader="硬盘迁移与挂载" >}} 迁移机械硬盘并重新挂载至新 NAS {{< /timelineItem >}} {{< /timeline >}}
+{{< timeline >}} {{< timelineItem icon="server" header="1. 重装系统" subheader="fnos" >}} 给AMD台式机重装 fnos 系统 {{< /timelineItem >}} {{< timelineItem icon="hard-drive" header="2. 扩容存储" subheader="140G + 新增 1T 硬盘" >}} 在原有 140G 磁盘基础上接入 1T 硬盘 {{< /timelineItem >}} {{< timelineItem icon="user" header="3. 迁移个人账户数据" subheader="迁移至 1T 硬盘" >}} 将本人账户数据转移至新 1T 硬盘 {{< /timelineItem >}} {{< timelineItem icon="users" header="4. 迁移其他用户数据" subheader="迁移至原 NAS 机械硬盘" >}} 将其他用户数据转移至原 NAS 机械硬盘 {{< /timelineItem >}} {{< timelineItem icon="refresh" header="5. 重新挂载至新 NAS" subheader="硬盘迁移与挂载" >}} 迁移机械硬盘并重新挂载至新 NAS {{< /timelineItem >}} {{< /timeline >}}
 
 ## 计划实施
 
