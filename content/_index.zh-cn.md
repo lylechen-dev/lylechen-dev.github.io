@@ -40,7 +40,7 @@ description: "此页面是使用 Hugo 的 Blowfish 主题搭建的"
 }
 
 .friend-card:hover {
-  background: rgba(var(--color-primary-500), 0.05);
+  background: rgba(6, 182, 212, 0.05);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   transform: translateY(-2px);
 }
@@ -48,9 +48,9 @@ description: "此页面是使用 Hugo 的 Blowfish 主题搭建的"
 .friend-card:focus-visible {
   outline: none;
   box-shadow: 
-    0 0 0 2px rgba(var(--color-primary-500), 0.25),
+    0 0 0 2px rgba(6, 182, 212, 0.25),
     0 2px 8px rgba(0, 0, 0, 0.1);
-  background: rgba(var(--color-primary-500), 0.04);
+  background: rgba(6, 182, 212, 0.04);
   transform: translateY(-2px);
 }
 
@@ -69,7 +69,7 @@ html.dark .friend-card,
 
 html.dark .friend-card:hover,
 .dark .friend-card:hover {
-  background: rgba(var(--color-primary-500), 0.08);
+  background: rgba(6, 182, 212, 0.08);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
   transform: translateY(-2px);
 }
@@ -78,9 +78,9 @@ html.dark .friend-card:focus-visible,
 .dark .friend-card:focus-visible {
   outline: none;
   box-shadow: 
-    0 0 0 2px rgba(var(--color-primary-500), 0.2),
+    0 0 0 2px rgba(6, 182, 212, 0.2),
     0 2px 8px rgba(0, 0, 0, 0.2);
-  background: rgba(var(--color-primary-500), 0.04);
+  background: rgba(6, 182, 212, 0.04);
   transform: translateY(-2px);
 }
 
@@ -105,7 +105,7 @@ html.dark .friend-card:active,
 
 .friend-card:focus-visible .card-logo {
   transform: scale(1.02);
-  box-shadow: 0 0 0 2px rgba(var(--color-primary-500), 0.2);
+  box-shadow: 0 0 0 2px rgba(6, 182, 212, 0.2);
 }
 
 /* 文字容器 */
@@ -130,12 +130,12 @@ html.dark .friend-card:active,
 }
 
 .friend-card:hover .friend-name {
-  color: rgba(var(--color-primary-500), 1);
+  color: #06b6d4;
 }
 
 html.dark .friend-card:hover .friend-name,
 .dark .friend-card:hover .friend-name {
-  color: rgba(var(--color-primary-400), 1);
+  color: #06b6d4;
   opacity: 0.8;
 }
 </style>
