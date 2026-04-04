@@ -1,0 +1,611 @@
+<!doctype html><html lang=zh-cn dir=ltr class=scroll-smooth data-default-appearance=light data-auto-appearance=true><head><meta charset=utf-8><meta http-equiv=content-language content="zh-cn"><meta name=viewport content="width=device-width,initial-scale=1"><meta http-equiv=X-UA-Compatible content="ie=edge"><meta name=theme-color><title>Debian12+i3-wm &#183; 墨・迹</title><meta name=title content="Debian12+i3-wm &#183; 墨・迹"><meta name=description content="一个强大、轻量级的 Hugo 主题。"><link rel=canonical href=https://lyle.qzz.io/posts/linux%E6%8E%A2%E7%B4%A2%E6%97%A5%E5%BF%97/debian12+i3-wm/><meta name=author content="墨."><meta property="og:url" content="https://lyle.qzz.io/posts/linux%E6%8E%A2%E7%B4%A2%E6%97%A5%E5%BF%97/debian12+i3-wm/"><meta property="og:site_name" content="墨・迹"><meta property="og:title" content="Debian12+i3-wm"><meta property="og:description" content="简介 # 最近一直在使用Debian12的Xfce桌面，学习Python爬虫的时候电脑性能不够，在开启一个哔哩哔哩和VScode之后就已经卡的不行了，下面我就用这台电脑讲解一下我安装和美化i3-wm的经历。"><meta property="og:locale" content="zh_cn"><meta property="og:type" content="article"><meta property="article:section" content="posts"><meta property="article:published_time" content="2026-03-15T00:00:00+08:00"><meta property="article:modified_time" content="2026-03-15T00:00:00+08:00"><meta property="og:image" content="https://lyle.qzz.io/posts/linux%E6%8E%A2%E7%B4%A2%E6%97%A5%E5%BF%97/debian12+i3-wm/featured.png"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://lyle.qzz.io/posts/linux%E6%8E%A2%E7%B4%A2%E6%97%A5%E5%BF%97/debian12+i3-wm/featured.png"><meta name=twitter:title content="Debian12+i3-wm"><meta name=twitter:description content="简介 # 最近一直在使用Debian12的Xfce桌面，学习Python爬虫的时候电脑性能不够，在开启一个哔哩哔哩和VScode之后就已经卡的不行了，下面我就用这台电脑讲解一下我安装和美化i3-wm的经历。"><link type=text/css rel=stylesheet href=/css/main.bundle.min.6faaec7ac64e62302a8e04436632f4359a43a3cca28185a5585a3dcb25c38180db8137811077ce2f26d9d6e43e899a0fccddee8075c9a938198007a48c1723ab.css integrity="sha512-b6rsesZOYjAqjgRDZjL0NZpDo8yigYWlWFo9yyXDgYDbgTeBEHfOLybZ1uQ+iZoPzN3ugHXJqTgZgAekjBcjqw=="><script type=text/javascript src=/js/appearance.min.6f41174b3a05b680820fe08cadbfa5fb7a7ca347b76a0955cdc68b9d8aca1ce24f0547e138cea33bcc7904d551a90afcb1cc7f2d9fe8557075d501419046c08c.js integrity="sha512-b0EXSzoFtoCCD+CMrb+l+3p8o0e3aglVzcaLnYrKHOJPBUfhOM6jO8x5BNVRqQr8scx/LZ/oVXB11QFBkEbAjA=="></script><script type=text/javascript src=/js/zen-mode.min.9814dee9614d32aeb56239d118edfe20acd6231424f9b19c2dd48835038414130a5e946c0d1c9087d60e60e31840c9babfd217e3d4b95643dc8d651a71ccdf4a.js integrity="sha512-mBTe6WFNMq61YjnRGO3+IKzWIxQk+bGcLdSINQOEFBMKXpRsDRyQh9YOYOMYQMm6v9IX49S5VkPcjWUacczfSg=="></script><script src=/lib/zoom/zoom.min.umd.a527109b68c082a70f3697716dd72a9d5aa8b545cf800cecbbc7399f2ca6f6e0ce3e431f2062b48bbfa47c9ea42822714060bef309be073f49b9c0e30d318d7b.js integrity="sha512-pScQm2jAgqcPNpdxbdcqnVqotUXPgAzsu8c5nyym9uDOPkMfIGK0i7+kfJ6kKCJxQGC+8wm+Bz9JucDjDTGNew=="></script><script defer type=text/javascript id=script-bundle src=/js/main.bundle.min.6b483bdc9246a18b35259ce2a40e363ade34a01edf2f3a31094f0a396844e75f863d18735a89b85ee8301f2dfdb9e471bdf47c44483d4b8f0d6eb93701873824.js integrity="sha512-a0g73JJGoYs1JZzipA42Ot40oB7fLzoxCU8KOWhE51+GPRhzWom4XugwHy39ueRxvfR8REg9S48Nbrk3AYc4JA==" data-copy=复制 data-copied=已复制></script><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=manifest href=/site.webmanifest><script type=application/ld+json>[{"@context":"https://schema.org","@type":"Article","articleSection":"文章","name":"Debian12\u002bi3-wm","headline":"Debian12\u002bi3-wm","inLanguage":"zh-cn","url":"https://lyle.qzz.io/posts/linux%E6%8E%A2%E7%B4%A2%E6%97%A5%E5%BF%97/debian12+i3-wm/","author":{"@type":"Person","name":"墨."},"copyrightYear":"2026","dateCreated":"2026-03-15T00:00:00\u002b08:00","datePublished":"2026-03-15T00:00:00\u002b08:00","dateModified":"2026-03-15T00:00:00\u002b08:00","mainEntityOfPage":"true","wordCount":"6105"},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"文章","item":"https://lyle.qzz.io/posts/"},{"@type":"ListItem","position":2,"name":"Debian12\u002bi3-wm","item":"https://lyle.qzz.io/posts/linux%E6%8E%A2%E7%B4%A2%E6%97%A5%E5%BF%97/debian12+i3-wm/"}]}]</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-PEDMYR1V0K"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-PEDMYR1V0K")</script></head><body class="flex flex-col h-screen m-auto leading-7 max-w-7xl px-6 sm:px-14 md:px-24 lg:px-32 text-lg bg-neutral text-neutral-900 dark:bg-neutral-800 dark:text-neutral bf-scrollbar"><div id=the-top class="absolute flex self-center"><a class="px-3 py-1 text-sm -translate-y-8 rounded-b-lg bg-primary-200 focus:translate-y-0 dark:bg-neutral-600" href=#main-content><span class="font-bold text-primary-600 pe-2 dark:text-primary-400">&darr;</span>
+跳过正文</a></div><div class=min-h-[148px]></div><div class="fixed inset-x-0 z-100"><div id=menu-blur class="absolute opacity-0 inset-x-0 top-0 h-full single_hero_background nozoom backdrop-blur-2xl shadow-2xl bg-neutral/25 dark:bg-neutral-800/25"></div><div class="relative m-auto leading-7 max-w-7xl px-6 sm:px-14 md:px-24 lg:px-32"><div class="main-menu flex items-center w-full gap-2 p-1 pl-0"><div><a href=/ class=flex><span class=sr-only>墨・迹</span>
+<img src=/img/logo.png width=1024 height=1024 class="logo max-h-20 max-w-20 object-scale-down object-left nozoom" alt></a></div><a href=/ class="text-base font-medium truncate min-w-0 shrink">墨・迹</a><div class="flex items-center ms-auto"><div class="hidden md:flex"><nav class="flex items-center gap-x-5 h-12"><a href=/ class="flex items-center bf-icon-color-hover" aria-label=主页 title="欢迎来到 Blowfish! :tada:"><span class="text-base font-medium break-normal">主页</span></a><div class=nested-menu><div class="cursor-pointer flex items-center"><a href=/categories/ aria-label=索引 class="flex items-center text-base font-medium bf-icon-color-hover" title=索引><span class="text-bg font-bg break-normal" title=索引>索引
+</span><span><span class="relative block icon"><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M5.23 7.21a.75.75.0 011.06.02L10 11.168l3.71-3.938a.75.75.0 111.08 1.04l-4.25 4.5a.75.75.0 01-1.08.0l-4.25-4.5a.75.75.0 01.02-1.06z" clip-rule="evenodd"/></svg></span></span></a></div><div class=menuhide><div class="pt-2 p-5 mt-2 rounded-xl backdrop-blur shadow-2xl bg-neutral/25 dark:bg-neutral-800/25"><div class="flex flex-col space-y-3"><a href=/categories/linux%E6%8E%A2%E7%B4%A2%E6%97%A5%E5%BF%97/ aria-label=Linux探索日志 class="flex items-center bf-icon-color-hover"><span class="text-sm font-sm" title=Linux探索日志>Linux探索日志
+</span></a><a href=/categories/web%E5%89%8D%E7%AB%AF%E7%AC%94%E8%AE%B0/ aria-label=Web前端笔记 class="flex items-center bf-icon-color-hover"><span class="text-sm font-sm" title=Web前端笔记>Web前端笔记
+</span></a><a href=/categories/%E7%B3%BB%E7%BB%9F%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0/ aria-label=系统基础笔记 class="flex items-center bf-icon-color-hover"><span class="text-sm font-sm" title=系统基础笔记>系统基础笔记
+</span></a><a href=/categories/%E9%9B%B6%E7%A2%8E%E9%9A%8F%E7%AC%94/ aria-label=零碎随笔 class="flex items-center bf-icon-color-hover"><span class="text-sm font-sm" title=零碎随笔>零碎随笔</span></a></div></div></div></div><a href=/pages/%E7%AB%99%E8%BF%B0/ class="flex items-center bf-icon-color-hover" aria-label=站述 title=站述><span class="text-base font-medium break-normal">站述
+</span></a><button id=search-button aria-label=Search class="text-base bf-icon-color-hover" title="搜索 (/)">
+<span class="relative block icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7 405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9.0 208 0S0 93.1.0 208s93.1 208 208 208c48.3.0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9.0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7.0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7.0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg></span></button><div class="flex items-center"><button id=appearance-switcher aria-label="Dark mode switcher" type=button class="text-base bf-icon-color-hover"><div class="flex items-center justify-center dark:hidden"><span class="relative block icon"><svg viewBox="0 0 512 512"><path fill="currentColor" d="M32 256C32 132.2 132.3 32 255.8 32c11.36.0 29.7 1.668 40.9 3.746 9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3 9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480 132.1 480 32 379.6 32 256z"/></svg></span></div><div class="items-center justify-center hidden dark:flex"><span class="relative block icon"><svg viewBox="0 0 512 512"><path fill="currentColor" d="M256 159.1c-53.02.0-95.1 42.98-95.1 95.1s41.2 96.9 95.1 96.9 95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347l-63.2-91.9 63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89 164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6 12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256 2.74 347.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7 19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109 109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69.0-127.1-57.31-127.1-127.1.0-70.69 57.31-127.1 127.1-127.1S383.1 186.2 383.1 256c0 70.7-56.4 127.1-127.1 127.1z"/></svg></span></div></button></div></nav></div><div class="flex md:hidden"><div class="flex items-center h-14 gap-4"><button id=search-button-mobile aria-label=Search class="flex items-center justify-center bf-icon-color-hover" title="搜索 (/)">
+<span class="relative block icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7 405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9.0 208 0S0 93.1.0 208s93.1 208 208 208c48.3.0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9.0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7.0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7.0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+</span></button>
+<button id=appearance-switcher-mobile type=button aria-label="Dark mode switcher" class="flex items-center justify-center text-neutral-900 hover:text-primary-600 dark:text-neutral-200 dark:hover:text-primary-400"><div class=dark:hidden><span class="relative block icon"><svg viewBox="0 0 512 512"><path fill="currentColor" d="M32 256C32 132.2 132.3 32 255.8 32c11.36.0 29.7 1.668 40.9 3.746 9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3 9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480 132.1 480 32 379.6 32 256z"/></svg></span></div><div class="hidden dark:block"><span class="relative block icon"><svg viewBox="0 0 512 512"><path fill="currentColor" d="M256 159.1c-53.02.0-95.1 42.98-95.1 95.1s41.2 96.9 95.1 96.9 95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347l-63.2-91.9 63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89 164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6 12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256 2.74 347.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7 19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109 109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69.0-127.1-57.31-127.1-127.1.0-70.69 57.31-127.1 127.1-127.1S383.1 186.2 383.1 256c0 70.7-56.4 127.1-127.1 127.1z"/></svg></span></div></button>
+<input type=checkbox id=mobile-menu-toggle autocomplete=off class="hidden peer">
+<label for=mobile-menu-toggle class="flex items-center justify-center cursor-pointer bf-icon-color-hover"><span class="relative block icon"><svg viewBox="0 0 448 512"><path fill="currentColor" d="M0 96C0 78.33 14.33 64 32 64H416c17.7.0 32 14.33 32 32 0 17.7-14.3 32-32 32H32C14.33 128 0 113.7.0 96zM0 256c0-17.7 14.33-32 32-32H416c17.7.0 32 14.3 32 32s-14.3 32-32 32H32c-17.67.0-32-14.3-32-32zM416 448H32c-17.67.0-32-14.3-32-32s14.33-32 32-32H416c17.7.0 32 14.3 32 32s-14.3 32-32 32z"/></svg></span></label><div role=dialog aria-modal=true style=scrollbar-gutter:stable class="fixed inset-0 z-50 invisible overflow-y-auto px-6 py-20 opacity-0 transition-[opacity,visibility] duration-300 peer-checked:visible peer-checked:opacity-100 bg-neutral-50/97 dark:bg-neutral-900/99
+bf-scrollbar"><label for=mobile-menu-toggle class="fixed end-8 top-5 flex items-center justify-center z-50 h-12 w-12 cursor-pointer select-none rounded-full bf-icon-color-hover border bf-border-color bf-border-color-hover bg-neutral-50 dark:bg-neutral-900"><span class="relative block icon"><svg viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75.0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3 54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75.0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75.0-45.25s32.75-12.5 45.25.0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25.0s12.5 32.75.0 45.25l-105.4 105.4L310.6 361.4z"/></svg></span></label><nav class="mx-auto max-w-md space-y-6"><div class=px-2><a href=/ aria-label=主页 class="flex items-center gap-4 group bf-icon-color-hover text-neutral-700 dark:text-neutral-200"><span title="欢迎来到 Blowfish! :tada:" class="text-2xl font-bold tracking-tight">主页</span></a></div><div class=px-2><a href=/categories/ aria-label=索引 class="flex items-center gap-4 group bf-icon-color-hover text-neutral-700 dark:text-neutral-200"><span title=索引 class="text-2xl font-bold tracking-tight">索引
+</span><label for=fullscreen-submenu-索引 class="ms-auto flex items-center justify-center h-10 w-10 cursor-pointer rounded-lg bf-icon-color-hover border bf-border-color bf-border-color-hover"><span class="relative block icon"><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M5.23 7.21a.75.75.0 011.06.02L10 11.168l3.71-3.938a.75.75.0 111.08 1.04l-4.25 4.5a.75.75.0 01-1.08.0l-4.25-4.5a.75.75.0 01.02-1.06z" clip-rule="evenodd"/></svg>
+</span></label></a><input checked type=checkbox id=fullscreen-submenu-索引 autocomplete=off class="hidden peer/full"><div class="grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 peer-checked/full:grid-rows-[1fr]"><div class=overflow-hidden><div class="ms-7 mt-4"><a href=/categories/linux%E6%8E%A2%E7%B4%A2%E6%97%A5%E5%BF%97/ aria-label=Linux探索日志 class="flex items-center gap-3 p-2 group bf-icon-color-hover text-neutral-700 dark:text-neutral-200"><span title=Linux探索日志 class=text-lg>Linux探索日志
+</span></a><a href=/categories/web%E5%89%8D%E7%AB%AF%E7%AC%94%E8%AE%B0/ aria-label=Web前端笔记 class="flex items-center gap-3 p-2 group bf-icon-color-hover text-neutral-700 dark:text-neutral-200"><span title=Web前端笔记 class=text-lg>Web前端笔记
+</span></a><a href=/categories/%E7%B3%BB%E7%BB%9F%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0/ aria-label=系统基础笔记 class="flex items-center gap-3 p-2 group bf-icon-color-hover text-neutral-700 dark:text-neutral-200"><span title=系统基础笔记 class=text-lg>系统基础笔记
+</span></a><a href=/categories/%E9%9B%B6%E7%A2%8E%E9%9A%8F%E7%AC%94/ aria-label=零碎随笔 class="flex items-center gap-3 p-2 group bf-icon-color-hover text-neutral-700 dark:text-neutral-200"><span title=零碎随笔 class=text-lg>零碎随笔</span></a></div></div></div></div><div class=px-2><a href=/pages/%E7%AB%99%E8%BF%B0/ aria-label=站述 class="flex items-center gap-4 group bf-icon-color-hover text-neutral-700 dark:text-neutral-200"><span title=站述 class="text-2xl font-bold tracking-tight">站述</span></a></div></nav></div></div></div></div></div><script>(function(){var t,n,e=document.querySelector(".main-menu");if(!e)return;t=window.location.pathname,n=e.querySelectorAll('a[href="'+t+'"]'),n.forEach(function(e){var t=e.querySelectorAll("span");t.forEach(function(e){e.classList.add("active")})})})()</script></div></div><script type=text/javascript src=/js/background-blur.min.605b3b942818f0ab5a717ae446135ec46b8ee5a2ad12ae56fb90dc2a76ce30c388f9fec8bcc18db15bd47e3fa8a09d779fa12aa9c184cf614a315bc72c6c163d.js integrity="sha512-YFs7lCgY8KtacXrkRhNexGuO5aKtEq5W+5DcKnbOMMOI+f7IvMGNsVvUfj+ooJ13n6EqqcGEz2FKMVvHLGwWPQ==" data-blur-id=menu-blur></script><div class="relative flex flex-col grow"><main id=main-content class=grow><article><div id=hero class="h-[150px] md:h-[200px]"></div><div class="fixed inset-x-0 top-0 h-[800px] single_hero_background nozoom"><img id=background-image src=/posts/linux%E6%8E%A2%E7%B4%A2%E6%97%A5%E5%BF%97/debian12+i3-wm/featured_hu_80ae3419602a0bd2.png role=presentation loading=eager decoding=async fetchpriority=high class="absolute inset-0 w-full h-full object-cover"><div class="absolute inset-0 bg-gradient-to-t from-neutral dark:from-neutral-800 to-transparent mix-blend-normal"></div><div class="absolute inset-0 opacity-60 bg-gradient-to-t from-neutral dark:from-neutral-800 to-neutral-100 dark:to-neutral-800 mix-blend-normal"></div></div><div id=background-blur class="fixed opacity-0 inset-x-0 top-0 h-full single_hero_background nozoom backdrop-blur-xl bg-neutral-100/75 dark:bg-neutral-800/60"></div><script type=text/javascript src=/js/background-blur.min.605b3b942818f0ab5a717ae446135ec46b8ee5a2ad12ae56fb90dc2a76ce30c388f9fec8bcc18db15bd47e3fa8a09d779fa12aa9c184cf614a315bc72c6c163d.js integrity="sha512-YFs7lCgY8KtacXrkRhNexGuO5aKtEq5W+5DcKnbOMMOI+f7IvMGNsVvUfj+ooJ13n6EqqcGEz2FKMVvHLGwWPQ==" data-blur-id=background-blur data-image-id=background-image data-image-url=/posts/linux%E6%8E%A2%E7%B4%A2%E6%97%A5%E5%BF%97/debian12+i3-wm/featured_hu_80ae3419602a0bd2.png></script><header id=single_header class="mt-5 max-w-prose"><ol class="text-sm text-neutral-500 dark:text-neutral-400 print:hidden"><li class=hidden><a class="hover:underline decoration-neutral-300 dark:underline-neutral-600" href=/>欢迎来到 Blowfish! :tada:</a><span class="px-1 text-primary-500">/</span></li><li class=inline><a class="hover:underline decoration-neutral-300 dark:underline-neutral-600" href=/posts/>文章</a><span class="px-1 text-primary-500">/</span></li><li class=hidden><a class="hover:underline decoration-neutral-300 dark:underline-neutral-600" href=/posts/linux%E6%8E%A2%E7%B4%A2%E6%97%A5%E5%BF%97/debian12+i3-wm/>Debian12+i3-wm</a><span class="px-1 text-primary-500">/</span></li></ol><h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">Debian12+i3-wm</h1><div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden"><div class="flex flex-row flex-wrap items-center"><time datetime=2026-03-15T00:00:00+08:00>2026-03-15</time><span class="px-2 text-primary-500">&#183;</span><span>6105 字</span><span class="px-2 text-primary-500">&#183;</span><span title=预计阅读>13 分钟</span><span class="px-2 text-primary-500">&#183;</span><span class=mb-[2px]>
+<span id=zen-mode-button class="text-lg hover:text-primary-500" title=啟用阅读模式 data-title-i18n-disable=啟用阅读模式 data-title-i18n-enable=停用阅读模式><span class="inline-block align-text-bottom"><span class="relative block icon"><svg viewBox="0 0 50 50" width="50" height="50"><path fill="currentColor" d="M12.980469 4C9.1204688 4 5.9804688 7.14 5.9804688 11L6 26H9.9804688V11c0-1.65 1.3400002-3 3.0000002-3H40.019531c1.66.0 3 1.35 3 3V39c0 1.65-1.34 3-3 3H29c0 1.54-.579062 2.94-1.539062 4H40.019531c3.86.0 7-3.14 7-7V11c0-3.86-3.14-7-7-7H12.980469zM7 28c-2.206.0-4 1.794-4 4V42c0 2.206 1.794 4 4 4H23c2.206.0 4-1.794 4-4V32c0-2.206-1.794-4-4-4H7zm0 4H23L23.001953 42H7V32z"/></svg></span></span></span></span></div><div class="flex flex-row flex-wrap items-center"></div><div class="flex flex-row flex-wrap items-center"><a class="relative mt-[0.5rem] me-2" href=/categories/linux%E6%8E%A2%E7%B4%A2%E6%97%A5%E5%BF%97/><span class="flex cursor-pointer"><span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">Linux探索日志</span></span></a></div></div><div class="flex author"><img class="!mt-0 !mb-0 h-24 w-24 rounded-full me-4" width=96 height=96 alt=墨. src=/img/avatar_hu_9d77592c44664829.png data-zoom-src=/img/avatar_hu_68da51debb6a3bb6.png><div class=place-self-center><div class="text-[0.6rem] uppercase leading-3 text-neutral-500 dark:text-neutral-400">作者</div><div class="font-semibold leading-6 text-neutral-800 dark:text-neutral-300">墨.</div><div class="text-sm text-neutral-700 dark:text-neutral-400">不可妄测观者之心，唯守心中之正，行己之所信。</div><div class="text-2xl sm:text-lg"></div></div></div><div class=mb-5></div></header><section class="flex flex-col max-w-full mt-0 prose dark:prose-invert lg:flex-row"><div class="order-first lg:ms-auto px-0 lg:order-last lg:ps-8 lg:max-w-2xs"><div class="toc ps-5 print:hidden lg:sticky lg:top-[140px]"><details open id=TOCView class="toc-right mt-0 overflow-y-auto overscroll-contain bf-scrollbar rounded-lg -ms-5 ps-5 pe-2 hidden lg:block"><summary class="block py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 -ms-5 ps-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">目录</summary><div class="min-w-[220px] py-2 border-dotted border-s-1 -ms-5 ps-5 dark:border-neutral-600"><nav id=TableOfContents><ul><li><a href=#简介>简介</a></li><li><a href=#debian12的安装>Debian12的安装</a><ul><li><a href=#镜像下载与写入>镜像下载与写入</a></li><li><a href=#debian12网络安装与注意事项>Debian12网络安装与注意事项</a></li></ul></li><li><a href=#i3-wm的安装与配置>i3-wm的安装与配置</a><ul><li><a href=#安装>安装</a></li><li><a href=#i3的常用快捷键>i3的常用快捷键</a></li><li><a href=#i3的配置与配置文件>i3的配置与配置文件</a></li></ul></li><li><a href=#安装后软件安装>安装后软件安装</a><ul><li><a href=#浏览器安装>浏览器安装</a></li><li><a href=#spark-store安装>spark store安装</a></li><li><a href=#alacritty>Alacritty</a></li><li><a href=#ranger>Ranger</a></li><li><a href=#redshift>Redshift</a></li><li><a href=#vim>Vim</a></li></ul></li></ul></nav></div></details><details class="toc-inside mt-0 overflow-hidden rounded-lg -ms-5 ps-5 lg:hidden"><summary class="py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 -ms-5 ps-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">目录</summary><div class="py-2 border-dotted border-neutral-300 border-s-1 -ms-5 ps-5 dark:border-neutral-600"><nav id=TableOfContents><ul><li><a href=#简介>简介</a></li><li><a href=#debian12的安装>Debian12的安装</a><ul><li><a href=#镜像下载与写入>镜像下载与写入</a></li><li><a href=#debian12网络安装与注意事项>Debian12网络安装与注意事项</a></li></ul></li><li><a href=#i3-wm的安装与配置>i3-wm的安装与配置</a><ul><li><a href=#安装>安装</a></li><li><a href=#i3的常用快捷键>i3的常用快捷键</a></li><li><a href=#i3的配置与配置文件>i3的配置与配置文件</a></li></ul></li><li><a href=#安装后软件安装>安装后软件安装</a><ul><li><a href=#浏览器安装>浏览器安装</a></li><li><a href=#spark-store安装>spark store安装</a></li><li><a href=#alacritty>Alacritty</a></li><li><a href=#ranger>Ranger</a></li><li><a href=#redshift>Redshift</a></li><li><a href=#vim>Vim</a></li></ul></li></ul></nav></div></details><script>(function(){"use strict";const s=.33,o="#TableOfContents",i=".anchor",a='a[href^="#"]',r="li ul",c="active";let t=!1;function l(e,n){const o=window.scrollY+window.innerHeight*n,i=[...document.querySelectorAll('#TableOfContents a[href^="#"]')],s=new Set(i.map(e=>e.getAttribute("href").substring(1)));if(t)for(let t=0;t<e.length;t++){const n=e[t];if(!s.has(n.id))continue;const o=n.getBoundingClientRect().top+window.scrollY;if(Math.abs(window.scrollY-o)<100)return n.id}for(let t=e.length-1;t>=0;t--){const n=e[t].getBoundingClientRect().top+window.scrollY;if(n<=o&&s.has(e[t].id))return e[t].id}return e.find(e=>s.has(e.id))?.id||""}function e({toc:e,anchors:t,links:n,scrollOffset:s,collapseInactive:o}){const i=l(t,s);if(!i)return;if(n.forEach(e=>{const t=e.getAttribute("href")===`#${i}`;if(e.classList.toggle(c,t),o){const n=e.closest("li")?.querySelector("ul");n&&(n.style.display=t?"":"none")}}),o){const n=e.querySelector(`a[href="#${CSS.escape(i)}"]`);let t=n;for(;t&&t!==e;)t.tagName==="UL"&&(t.style.display=""),t.tagName==="LI"&&t.querySelector("ul")?.style.setProperty("display",""),t=t.parentElement}}function n(){const n=document.querySelector(o);if(!n)return;const l=!1,u=[...document.querySelectorAll(i)],d=[...n.querySelectorAll(a)];l&&n.querySelectorAll(r).forEach(e=>e.style.display="none"),d.forEach(e=>{e.addEventListener("click",()=>{t=!0})});const c={toc:n,anchors:u,links:d,scrollOffset:s,collapseInactive:l};window.addEventListener("scroll",()=>e(c),{passive:!0}),window.addEventListener("hashchange",()=>e(c),{passive:!0}),e(c)}document.readyState==="loading"?document.addEventListener("DOMContentLoaded",n):n()})()</script></div></div><div class="min-w-0 min-h-0 max-w-fit"><div class="article-content max-w-prose mb-20"><h2 class="relative group">简介<div id=简介 class=anchor></div><span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none"><a class="text-primary-300 dark:text-neutral-700 !no-underline" href=#%e7%ae%80%e4%bb%8b aria-label=锚点>#</a></span></h2><p>最近一直在使用Debian12的Xfce桌面，学习Python爬虫的时候电脑性能不够，在开启一个哔哩哔哩和VScode之后就已经卡的不行了，下面我就用这台电脑讲解一下我安装和美化i3-wm的经历。</p><figure><img class="my-0 rounded-md" loading=lazy decoding=async fetchpriority=low alt src=https://pic1.zhimg.com/v2-117f726fbf10ff2c8137bb5e7b9846d2_1440w.jpg></figure><p>电脑的配置，以及安装i3-wm后的效果</p><hr><h2 class="relative group">Debian12的安装<div id=debian12的安装 class=anchor></div><span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none"><a class="text-primary-300 dark:text-neutral-700 !no-underline" href=#debian12%e7%9a%84%e5%ae%89%e8%a3%85 aria-label=锚点>#</a></span></h2><p>我不会用命令行安装Debian12的live版本，所以就使用耗时较长的netinst版本进行安装</p><h3 class="relative group">镜像下载与写入<div id=镜像下载与写入 class=anchor></div><span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none"><a class="text-primary-300 dark:text-neutral-700 !no-underline" href=#%e9%95%9c%e5%83%8f%e4%b8%8b%e8%bd%bd%e4%b8%8e%e5%86%99%e5%85%a5 aria-label=锚点>#</a></span></h3><p>点击<a href=https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-12.5.0-amd64-netinst.iso target=_blank rel=noreferrer>此链接</a>即可下载镜像。</p><p><strong>在Windows系统上</strong>，使用Rufus工具写入，此为标准版<a href=https://github.com/pbatard/rufus/releases/download/v4.5/rufus-4.5.exe target=_blank rel=noreferrer>下载链接</a>。在Linux和Windows系统都可以使用的是ventoy，<a href=https://www.lanzoui.com/i5ETa219q9qj target=_blank rel=noreferrer>Windows下载</a> <a href=https://www.lanzoui.com/iIzVH219q9dg target=_blank rel=noreferrer>Linux下载</a></p><p>如果电脑不可以使用，手边正好有一部安卓手机的可以尝试<a href=http://x1.ydyspc.com/etchdroid.apk target=_blank rel=noreferrer>下载EtchDroid</a>，在手机上写镜像。</p><h3 class="relative group">Debian12网络安装与注意事项<div id=debian12网络安装与注意事项 class=anchor></div><span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none"><a class="text-primary-300 dark:text-neutral-700 !no-underline" href=#debian12%e7%bd%91%e7%bb%9c%e5%ae%89%e8%a3%85%e4%b8%8e%e6%b3%a8%e6%84%8f%e4%ba%8b%e9%a1%b9 aria-label=锚点>#</a></span></h3><p>正常引导并进入，正常选择即可。在选择镜像源的时候建议选择清华的，我多次安装只有清华源每次都正常。</p><p>选择完软件源后就会出现桌面选择的界面，这里只选择最后一项，也就是标准系统工具即可。</p><h2 class="relative group">i3-wm的安装与配置<div id=i3-wm的安装与配置 class=anchor></div><span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none"><a class="text-primary-300 dark:text-neutral-700 !no-underline" href=#i3-wm%e7%9a%84%e5%ae%89%e8%a3%85%e4%b8%8e%e9%85%8d%e7%bd%ae aria-label=锚点>#</a></span></h2><p>在进入本地系统后就是类似于终端的界面，这里<em><strong>用户名填root</strong></em>，密码就是你自己设置的<strong>管理员密码</strong>，<strong>并非用户密码</strong>。</p><h3 class="relative group">安装<div id=安装 class=anchor></div><span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none"><a class="text-primary-300 dark:text-neutral-700 !no-underline" href=#%e5%ae%89%e8%a3%85 aria-label=锚点>#</a></span></h3><p>所需要的软件有：</p><p>sudo（普通用户调用管理员权限）</p><p>lightdm （登录管理器）</p><p>i3（i3的所有软件包，只想要窗口管理器的可以选择i3-wm）</p><p>Thunar / ranger（文件管理器，thunar是图形界面，ranger是命令行，自行选择即可）</p><p>xfce4-terminal / Alacritty （都为终端，xfce4-terminal具有图形界面，自行选择即可）</p><p>rofi（图形化drun）</p><p>picom（轻量级窗口管理特效的首选）</p><p>i3-gaps （i3窗口界面，安装i3的直接跳过即可，只安装i3-wm的需要安装）</p><p>i3lock（i3锁屏界面，自行选择是否安装。安装i3的自带）</p><p>i3stauts（i3bar中显示时间，电量等信息的小组件。安装i3自带）</p><p>network-manager-gnome（gnome网络管理器，用于切换WiFi网络）</p><p>xfce4-power-manager（电源管理器）</p><p>blueman（蓝牙管理器）</p><p>volumeicon-alsa（声音控制）</p><p>lxappearance（界面外观更换）</p><p>feh（更换壁纸工具）</p><hr><p>只需要输入：</p><div class=highlight-wrapper><div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>apt install sudo lightdm i3 ranger alacritty rofi  picom network-manager-gnome xfce4-power-manager blueman volumeicon-alsa lxappearance feh</span></span></code></pre></div></div><p>普通用户使用sudo</p><div class=highlight-wrapper><div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>sudo usermod -aG sudo username</span></span></code></pre></div></div><p>执行完成后输入重启命令即可</p><div class=highlight-wrapper><div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>reboot</span></span></code></pre></div></div><h3 class="relative group">i3的常用快捷键<div id=i3的常用快捷键 class=anchor></div><span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none"><a class="text-primary-300 dark:text-neutral-700 !no-underline" href=#i3%e7%9a%84%e5%b8%b8%e7%94%a8%e5%bf%ab%e6%8d%b7%e9%94%ae aria-label=锚点>#</a></span></h3><p>刚进桌面时会让你选择快捷键的Mod键是<strong>Windows徽标键</strong>或<strong>Ctrl键</strong>，自行选择即可。</p><p>$mod + Enter 启动虚拟终端</p><p>$mod + A 焦点转义到父窗口上</p><p>$mod + S 堆叠布局</p><p>$mod + W 标签布局</p><p>$mod + E 默认布局 连续按下 可以从 纵向排列和竖向排列之间 来回切换</p><p>$mod + SpaceBar 焦点在平铺式／浮动式转换</p><p>$mod + Shift + SpaceBar 窗口在平铺式／浮动式转换</p><p>$mod + shift + &lt;数字键> 将当前程序发送到指定window</p><p>$mod + &lt;方向键> 移动鼠标到焦点</p><p>$mod + shift + &lt;方向键> 移动窗口位置</p><p>$mod + D 启动 dmenu</p><p>$mod + H 水平分割窗口</p><p>$mod + V 垂直分割窗口</p><p>$mod + J 焦点往左窗口移</p><p>$mod + K 焦点往下窗口移</p><p>$mod + L 焦点往上窗口移</p><p>$mod + ; 焦点往右窗口移</p><p>$mod + Shift + Q 杀死当前窗口的进程</p><p>$mod + Shift + E 退出 i3</p><p>$mod + Shift + C 当场重新加载 i3config, 无需重启</p><p>$mod + Shift + R 重启 i3 （还重新加载了 i3config, 又没有退出过程）</p><p>$mod + &lt;数字键> 切换window</p><p>$mod + F 焦点窗口全屏</p><p>可在i3配置中更换快捷键对应操作</p><h3 class="relative group">i3的配置与配置文件<div id=i3的配置与配置文件 class=anchor></div><span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none"><a class="text-primary-300 dark:text-neutral-700 !no-underline" href=#i3%e7%9a%84%e9%85%8d%e7%bd%ae%e4%b8%8e%e9%85%8d%e7%bd%ae%e6%96%87%e4%bb%b6 aria-label=锚点>#</a></span></h3><p>配置文件位置在</p><div class=highlight-wrapper><div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>./home/username/.config/i3/config</span></span></code></pre></div></div><p>username位置填自己的用户名即可。<em><strong>.config是隐藏文件夹，用Ctrl+H键显示。</strong></em></p><figure><img class="my-0 rounded-md" loading=lazy decoding=async fetchpriority=low alt src=./.images/Debian_Netinst/ranger.png></figure><p>ranger中文件位置</p><p>将这几条添加进去即可</p><div class=highlight-wrapper><div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=nb>exec</span> --no-startup-id fcitx
+</span></span><span class=line><span class=cl><span class=nb>exec</span> --no-startup-id xfce4-power-manager
+</span></span><span class=line><span class=cl><span class=nb>exec</span> --no-startup-id volumeicon
+</span></span><span class=line><span class=cl><span class=nb>exec</span> --no-startup-id blueman
+</span></span><span class=line><span class=cl><span class=nb>exec</span> --no-startup-id /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
+</span></span><span class=line><span class=cl>new_window none
+</span></span><span class=line><span class=cl>new_float none
+</span></span><span class=line><span class=cl>hide_edge_borders both <span class=c1>#隐藏窗口边框</span>
+</span></span><span class=line><span class=cl>gaps inner <span class=m>8</span>
+</span></span><span class=line><span class=cl>gaps outer <span class=m>6</span></span></span></code></pre></div></div><p>更改dmenu</p><figure><img class="my-0 rounded-md" loading=lazy decoding=async fetchpriority=low alt src=https://pic2.zhimg.com/v2-dc4a518cc7bf3bb93a9d811a5835bd7d_1440w.jpg></figure><p>将原本配置文件改成这样即可</p><p>mod + Shift + R 重启 i3</p><hr><p>picom配置透明窗口，渐变动画</p><p>文件位置（如果没有新建即可）：</p><div class=highlight-wrapper><div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>./home/username/.config/picom.conf</span></span></code></pre></div></div><p>这是我的配置文件:</p><div class=highlight-wrapper><div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=c1>#################################</span>
+</span></span><span class=line><span class=cl><span class=c1>#             Shadows           #</span>
+</span></span><span class=line><span class=cl><span class=c1>#################################</span>
+</span></span><span class=line><span class=cl><span class=c1># 在 Windows 上启用客户端阴影。注意桌面窗口</span>
+</span></span><span class=line><span class=cl><span class=c1># (windows with &#39;_NET_WM_WINDOW_TYPE_DESKTOP&#39;) 永远不会有阴影，</span>
+</span></span><span class=line><span class=cl><span class=c1># 除非使用 wintypes 选项明确要求。</span>
+</span></span><span class=line><span class=cl><span class=c1>#</span>
+</span></span><span class=line><span class=cl><span class=c1># shadow = false</span>
+</span></span><span class=line><span class=cl><span class=nv>shadow</span> <span class=o>=</span> false<span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=c1># 阴影的模糊半径，以像素为单位。 （默认为 12）</span>
+</span></span><span class=line><span class=cl><span class=c1># shadow-radius = 12</span>
+</span></span><span class=line><span class=cl>shadow-radius <span class=o>=</span> 7<span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=c1># 阴影的不透明度。 （0.0 - 1.0，默认为 0.75）</span>
+</span></span><span class=line><span class=cl><span class=c1># shadow-opacity = .75</span>
+</span></span><span class=line><span class=cl><span class=c1># 阴影的左偏移，以像素为单位。 （默认为 -15）</span>
+</span></span><span class=line><span class=cl><span class=c1># shadow-offset-x = -15</span>
+</span></span><span class=line><span class=cl>shadow-offset-x <span class=o>=</span> -7<span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=c1># 阴影的顶部偏移量，以像素为单位。 （默认为 -15）</span>
+</span></span><span class=line><span class=cl><span class=c1># shadow-offset-y = -15</span>
+</span></span><span class=line><span class=cl>shadow-offset-y <span class=o>=</span> -7<span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=c1># 阴影的红色值（0.0 - 1.0，默认为 0）。</span>
+</span></span><span class=line><span class=cl><span class=c1># shadow-red = 0</span>
+</span></span><span class=line><span class=cl><span class=c1># 阴影的绿色值（0.0 - 1.0，默认为 0）。</span>
+</span></span><span class=line><span class=cl><span class=c1># shadow-green = 0</span>
+</span></span><span class=line><span class=cl><span class=c1># 阴影的蓝色值（0.0 - 1.0，默认为 0）。</span>
+</span></span><span class=line><span class=cl><span class=c1># shadow-blue = 0</span>
+</span></span><span class=line><span class=cl><span class=c1># 阴影的十六进制字符串颜色值（#000000 - #FFFFFF，默认为#000000）。此选项将覆盖选项集阴影-（红色/绿色/蓝色）</span>
+</span></span><span class=line><span class=cl><span class=c1># shadow-color = &#34;#000000&#34;</span>
+</span></span><span class=line><span class=cl><span class=c1># 指定不应该有阴影的窗口的条件列表。</span>
+</span></span><span class=line><span class=cl><span class=c1>#</span>
+</span></span><span class=line><span class=cl><span class=c1># examples:</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1>#   shadow-exclude = &#34;n:e:Notification&#34;;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1>#</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># shadow-exclude = []</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>shadow-exclude <span class=o>=</span> <span class=o>[</span>
+</span></span><span class=line><span class=cl>  <span class=s2>&#34;name = &#39;Notification&#39;&#34;</span>,
+</span></span><span class=line><span class=cl>  <span class=s2>&#34;class_g = &#39;Conky&#39;&#34;</span>,
+</span></span><span class=line><span class=cl>  <span class=s2>&#34;class_g ?= &#39;Notify-osd&#39;&#34;</span>,
+</span></span><span class=line><span class=cl>  <span class=s2>&#34;class_g = &#39;Cairo-clock&#39;&#34;</span>,
+</span></span><span class=line><span class=cl>  <span class=s2>&#34;_GTK_FRAME_EXTENTS@:c&#34;</span>
+</span></span><span class=line><span class=cl><span class=o>]</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=c1># 指定不应覆盖阴影的窗口条件列表，例如停靠窗口。</span>
+</span></span><span class=line><span class=cl><span class=c1># clip-shadow-above = []</span>
+</span></span><span class=line><span class=cl><span class=c1># 指定一个 X 几何图形来描述不应该出现阴影的区域</span>
+</span></span><span class=line><span class=cl><span class=c1># 被绘制在，比如一个停靠窗口区域。采用</span>
+</span></span><span class=line><span class=cl><span class=c1># shadow-exclude-reg u003d &#34;x10+0+0&#34;</span>
+</span></span><span class=line><span class=cl><span class=c1># 例如，如果屏幕底部的 10 个像素不应绘制阴影。</span>
+</span></span><span class=line><span class=cl><span class=c1>#</span>
+</span></span><span class=line><span class=cl><span class=c1># shadow-exclude-reg = &#34;&#34;</span>
+</span></span><span class=line><span class=cl><span class=c1># 在特定的 Xinerama 屏幕上将窗口的阴影完全裁剪到屏幕上。</span>
+</span></span><span class=line><span class=cl><span class=c1># xinerama-shadow-crop = false</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1>#################################</span>
+</span></span><span class=line><span class=cl><span class=c1>#           Fading              #</span>
+</span></span><span class=line><span class=cl><span class=c1>#################################</span>
+</span></span><span class=line><span class=cl><span class=c1># 在打开/关闭和不透明度变化时淡入/淡出窗口，</span>
+</span></span><span class=line><span class=cl><span class=c1>#  unless no-fading-openclose is used.</span>
+</span></span><span class=line><span class=cl><span class=c1># fading = false</span>
+</span></span><span class=line><span class=cl><span class=nv>fading</span> <span class=o>=</span> true<span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 淡入时步骤之间的不透明度变化。（0.01 - 1.0，默认为 0.028）</span>
+</span></span><span class=line><span class=cl><span class=c1># fade-in-step = 0.028</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>fade-in-step <span class=o>=</span> 0.03<span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=c1># 淡出时步骤之间的不透明度变化。 （0.01 - 1.0，默认为 0.03）</span>
+</span></span><span class=line><span class=cl><span class=c1># fade-out-step = 0.03</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>fade-out-step <span class=o>=</span> 0.03<span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=c1># 淡入淡出步骤之间的时间，以毫秒为单位。 （&gt; 0，默认为 10）</span>
+</span></span><span class=line><span class=cl><span class=c1># fade-delta = 10</span>
+</span></span><span class=line><span class=cl><span class=c1># 指定不应褪色的窗口条件列表。</span>
+</span></span><span class=line><span class=cl><span class=c1># fade-exclude = []</span>
+</span></span><span class=line><span class=cl><span class=c1># 不要在窗口打开/关闭时淡入淡出。</span>
+</span></span><span class=line><span class=cl><span class=c1># no-fading-openclose = false</span>
+</span></span><span class=line><span class=cl><span class=c1># 不要使用 WM 框架淡化被破坏的 ARGB 窗口。解决 Openbox、Fluxbox 等中的错误。</span>
+</span></span><span class=line><span class=cl><span class=c1># no-fading-destroyed-argb = false</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1>#################################</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1>#   Transparency / Opacity      #</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1>#################################</span>
+</span></span><span class=line><span class=cl><span class=c1># 非活动窗口的不透明度。 （0.1 - 1.0，默认为 1.0）</span>
+</span></span><span class=line><span class=cl><span class=c1># inactive-opacity = 1</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>inactive-opacity <span class=o>=</span> 0.5<span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 窗口标题栏和边框的不透明度。 （0.1 - 1.0，默认禁用）</span>
+</span></span><span class=line><span class=cl><span class=c1># frame-opacity = 1.0</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>frame-opacity <span class=o>=</span> 0.8<span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 让 -i 设置的非活动不透明度覆盖窗口的 &#39;_NET_WM_WINDOW_OPACITY&#39; 值。</span>
+</span></span><span class=line><span class=cl><span class=c1># inactive-opacity-override = true</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>inactive-opacity-override <span class=o>=</span> false<span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 活动窗口的默认不透明度。 （0.0 - 1.0，默认为 1.0）</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>active-opacity <span class=o>=</span> 0.8
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 使非活动窗口变暗。 （0.0 - 1.0，默认为 0.0）</span>
+</span></span><span class=line><span class=cl><span class=c1># inactive-dim = 0.0</span>
+</span></span><span class=line><span class=cl><span class=c1># 指定不应该被视为焦点的窗口的条件列表。</span>
+</span></span><span class=line><span class=cl><span class=c1># focus-exclude = []</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>focus-exclude <span class=o>=</span> <span class=o>[</span> <span class=s2>&#34;class_g = &#39;Cairo-clock&#39;&#34;</span> <span class=o>]</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 使用固定的非活动暗度值，而不是根据窗口不透明度进行调整。</span>
+</span></span><span class=line><span class=cl><span class=c1># inactive-dim-fixed = 1.0</span>
+</span></span><span class=line><span class=cl><span class=c1># 指定不透明度规则列表，格式为 `PERCENT:PATTERN`,</span>
+</span></span><span class=line><span class=cl><span class=c1># 像 `50:name *u003d &#34;Firefox&#34;`。建议使用 picom-trans。</span>
+</span></span><span class=line><span class=cl><span class=c1># 请注意，我们不保证可能与其他人发生冲突</span>
+</span></span><span class=line><span class=cl><span class=c1># 在框架或客户端窗口上设置“_NET_WM_WINDOW_OPACITY”的程序。</span>
+</span></span><span class=line><span class=cl><span class=c1># example:</span>
+</span></span><span class=line><span class=cl><span class=c1>#    opacity-rule = [ &#34;80:class_g = &#39;URxvt&#39;&#34; ];</span>
+</span></span><span class=line><span class=cl><span class=c1>#</span>
+</span></span><span class=line><span class=cl><span class=c1># opacity-rule = []</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1>#################################</span>
+</span></span><span class=line><span class=cl><span class=c1>#           Corners             #</span>
+</span></span><span class=line><span class=cl><span class=c1>#################################</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 设置圆角窗口角的半径。当 &gt; 0 时，合成器将</span>
+</span></span><span class=line><span class=cl><span class=c1># 圆窗户的角落。不能很好的互动</span>
+</span></span><span class=line><span class=cl><span class=c1># `transparent-clipping`.</span>
+</span></span><span class=line><span class=cl>corner-radius <span class=o>=</span> <span class=m>0</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 排除圆角的条件。</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>rounded-corners-exclude <span class=o>=</span> <span class=o>[</span>
+</span></span><span class=line><span class=cl>  <span class=s2>&#34;window_type = &#39;dock&#39;&#34;</span>,
+</span></span><span class=line><span class=cl>  <span class=s2>&#34;window_type = &#39;desktop&#39;&#34;</span>
+</span></span><span class=line><span class=cl><span class=o>]</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1>#################################</span>
+</span></span><span class=line><span class=cl><span class=c1>#     Background-Blurring       #</span>
+</span></span><span class=line><span class=cl><span class=c1>#################################</span>
+</span></span><span class=line><span class=cl><span class=c1># 背景模糊的参数，请参阅 *BLUR* 部分了解更多信息。</span>
+</span></span><span class=line><span class=cl><span class=c1># blur-method =</span>
+</span></span><span class=line><span class=cl><span class=c1># blur-size = 12</span>
+</span></span><span class=line><span class=cl><span class=c1>#</span>
+</span></span><span class=line><span class=cl><span class=c1># blur-deviation = false</span>
+</span></span><span class=line><span class=cl><span class=c1>#</span>
+</span></span><span class=line><span class=cl><span class=c1># blur-strength = 5</span>
+</span></span><span class=line><span class=cl><span class=c1># 模糊半透明/ARGB 窗口的背景。</span>
+</span></span><span class=line><span class=cl><span class=c1># 性能不佳，具有依赖于驱动程序的行为。</span>
+</span></span><span class=line><span class=cl><span class=c1># 交换机名称可能会更改，恕不另行通知。</span>
+</span></span><span class=line><span class=cl><span class=c1>#</span>
+</span></span><span class=line><span class=cl><span class=c1># blur-background = false</span>
+</span></span><span class=line><span class=cl><span class=c1># 当窗口框架不透明时模糊窗口的背景。</span>
+</span></span><span class=line><span class=cl><span class=c1># Implies:</span>
+</span></span><span class=line><span class=cl><span class=c1>#    blur-background</span>
+</span></span><span class=line><span class=cl><span class=c1># 性能不佳，具有依赖于驱动程序的行为。名称可能会改变。</span>
+</span></span><span class=line><span class=cl><span class=c1>#</span>
+</span></span><span class=line><span class=cl><span class=c1># blur-background-frame = false</span>
+</span></span><span class=line><span class=cl><span class=c1># 使用固定的模糊强度，而不是根据窗口不透明度进行调整。</span>
+</span></span><span class=line><span class=cl><span class=c1># 模糊背景固定 = 假</span>
+</span></span><span class=line><span class=cl><span class=c1># 指定模糊卷积核，格式如下：</span>
+</span></span><span class=line><span class=cl><span class=c1># example:</span>
+</span></span><span class=line><span class=cl><span class=c1>#   blur-kern = &#34;5,5,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1&#34;;</span>
+</span></span><span class=line><span class=cl><span class=c1>#</span>
+</span></span><span class=line><span class=cl><span class=c1># blur-kern = &#34;&#34;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>blur-kern <span class=o>=</span> <span class=s2>&#34;3x3box&#34;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 排除背景模糊的条件。</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># blur-background-exclude = []</span>
+</span></span><span class=line><span class=cl>blur-background-exclude <span class=o>=</span> <span class=o>[</span>
+</span></span><span class=line><span class=cl>  <span class=s2>&#34;window_type = &#39;dock&#39;&#34;</span>,
+</span></span><span class=line><span class=cl>  <span class=s2>&#34;window_type = &#39;desktop&#39;&#34;</span>,
+</span></span><span class=line><span class=cl>  <span class=s2>&#34;_GTK_FRAME_EXTENTS@:c&#34;</span>
+</span></span><span class=line><span class=cl><span class=o>]</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1>#################################</span>
+</span></span><span class=line><span class=cl><span class=c1>#       General Settings        #</span>
+</span></span><span class=line><span class=cl><span class=c1>#################################</span>
+</span></span><span class=line><span class=cl><span class=c1># 守护进程。初始化后分叉到后台。导致某些（编写错误的）驱动程序出现问题。</span>
+</span></span><span class=line><span class=cl><span class=c1># daemon = false</span>
+</span></span><span class=line><span class=cl><span class=c1># 指定要使用的后端：`xrender`、`glx` 或 `xr_glx_hybrid`。</span>
+</span></span><span class=line><span class=cl><span class=c1># `xrender` is the default one.</span>
+</span></span><span class=line><span class=cl><span class=c1># backend = &#34;glx&#34;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=nv>backend</span> <span class=o>=</span> <span class=s2>&#34;xrender&#34;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 启用/禁用垂直同步。</span>
+</span></span><span class=line><span class=cl><span class=c1># vsync = false</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=nv>vsync</span> <span class=o>=</span> true<span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 通过 D-Bus 启用远程控制。有关详细信息，请参阅下面的 *D-BUS API* 部分。</span>
+</span></span><span class=line><span class=cl><span class=c1># dbus = false</span>
+</span></span><span class=line><span class=cl><span class=c1># 尝试检测 WM 窗口（一个非覆盖重定向窗口，没有</span>
+</span></span><span class=line><span class=cl><span class=c1># 具有&#39;WM_STATE&#39;的孩子）并将它们标记为活动。</span>
+</span></span><span class=line><span class=cl><span class=c1>#</span>
+</span></span><span class=line><span class=cl><span class=c1># mark-wmwin-focused = false</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>mark-wmwin-focused <span class=o>=</span> true<span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 标记没有以“WM_STATE”为焦点的子窗口的覆盖重定向窗口。</span>
+</span></span><span class=line><span class=cl><span class=c1># mark-ovredir-focused = false</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>mark-ovredir-focused <span class=o>=</span> true<span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 尝试检测带有圆角的窗口并且不考虑它们</span>
+</span></span><span class=line><span class=cl><span class=c1># 形状的窗户。不幸的是，准确度不是很高。</span>
+</span></span><span class=line><span class=cl><span class=c1>#</span>
+</span></span><span class=line><span class=cl><span class=c1># detect-rounded-corners = false</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>detect-rounded-corners <span class=o>=</span> true<span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 在客户端窗口上检测&#39;_NET_WM_WINDOW_OPACITY&#39;，对窗口管理器很有用</span>
+</span></span><span class=line><span class=cl><span class=c1># 不将客户端窗口的“_NET_WM_WINDOW_OPACITY”传递给框架窗口。</span>
+</span></span><span class=line><span class=cl><span class=c1>#</span>
+</span></span><span class=line><span class=cl><span class=c1># detect-client-opacity = false</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>detect-client-opacity <span class=o>=</span> true<span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 使用 EWMH &#39;_NET_ACTIVE_WINDOW&#39; 来确定当前聚焦的窗口，</span>
+</span></span><span class=line><span class=cl><span class=c1># 而不是听 &#39;FocusIn&#39;/&#39;FocusOut&#39; 事件。可能精度更高，</span>
+</span></span><span class=line><span class=cl><span class=c1># 前提是 WM 支持它。</span>
+</span></span><span class=line><span class=cl><span class=c1>#</span>
+</span></span><span class=line><span class=cl><span class=c1># use-ewmh-active-win = false</span>
+</span></span><span class=line><span class=cl><span class=c1># 如果检测到全屏不透明窗口，则取消重定向所有窗口，</span>
+</span></span><span class=line><span class=cl><span class=c1># 最大化全屏窗口的性能。已知会导致闪烁</span>
+</span></span><span class=line><span class=cl><span class=c1># 当重定向/取消重定向窗口时。</span>
+</span></span><span class=line><span class=cl><span class=c1>#</span>
+</span></span><span class=line><span class=cl><span class=c1># unredir-if-possible = false</span>
+</span></span><span class=line><span class=cl><span class=c1># 取消重定向窗口前的延迟，以毫秒为单位。默认为 0。</span>
+</span></span><span class=line><span class=cl><span class=c1># unredir-if-possible-delay = 0</span>
+</span></span><span class=line><span class=cl><span class=c1># 不应该被视为非重定向屏幕全屏的窗口条件。</span>
+</span></span><span class=line><span class=cl><span class=c1># unredir-if-possible-exclude = []</span>
+</span></span><span class=line><span class=cl><span class=c1># 使用 &#39;WM_TRANSIENT_FOR&#39; 对窗口进行分组，并考虑窗口</span>
+</span></span><span class=line><span class=cl><span class=c1>#在同一组中同时专注。</span>
+</span></span><span class=line><span class=cl><span class=c1>#</span>
+</span></span><span class=line><span class=cl><span class=c1># detect-transient = false</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>detect-transient <span class=o>=</span> true<span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 使用 &#39;WM_CLIENT_LEADER&#39; 对窗口进行分组，并考虑同一个窗口</span>
+</span></span><span class=line><span class=cl><span class=c1># 小组同时聚焦。这通常意味着来自同一应用程序的窗口</span>
+</span></span><span class=line><span class=cl><span class=c1># 将同时被视为专注或不专注。</span>
+</span></span><span class=line><span class=cl><span class=c1># 如果启用了检测瞬态，&#39;WM_TRANSIENT_FOR&#39; 具有更高的优先级。</span>
+</span></span><span class=line><span class=cl><span class=c1>#</span>
+</span></span><span class=line><span class=cl><span class=c1># detect-client-leader = false</span>
+</span></span><span class=line><span class=cl><span class=c1># 将损坏区域的大小调整为特定数量的像素。</span>
+</span></span><span class=line><span class=cl><span class=c1># 正值放大，负值缩小。</span>
+</span></span><span class=line><span class=cl><span class=c1># 如果值为正，则不会实际绘制那些额外的像素</span>
+</span></span><span class=line><span class=cl><span class=c1># 到屏幕，仅用于模糊计算等。 （由于技术限制，</span>
+</span></span><span class=line><span class=cl><span class=c1># 使用损坏，这些像素仍然会错误地绘制到屏幕上。）</span>
+</span></span><span class=line><span class=cl><span class=c1># 主要用于修复模糊的线路损坏问题，</span>
+</span></span><span class=line><span class=cl><span class=c1># 在这种情况下你应该在这里使用模糊半径值</span>
+</span></span><span class=line><span class=cl><span class=c1># （例如，对于 3x3 内核，您应该使用 `--resize-damage 1`，</span>
+</span></span><span class=line><span class=cl><span class=c1># 使用 5x5 的 `--resize-damage 2`，依此类推）。</span>
+</span></span><span class=line><span class=cl><span class=c1># 可能会也可能不会与 *--glx-no-stencil* 一起使用。收缩功能不正常。</span>
+</span></span><span class=line><span class=cl><span class=c1>#</span>
+</span></span><span class=line><span class=cl><span class=c1># resize-damage = 1</span>
+</span></span><span class=line><span class=cl><span class=c1># 指定应该用反转颜色绘制的窗口的条件列表。</span>
+</span></span><span class=line><span class=cl><span class=c1># 资源占用，并且没有经过很好的测试。</span>
+</span></span><span class=line><span class=cl><span class=c1>#</span>
+</span></span><span class=line><span class=cl><span class=c1># invert-color-include = []</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># GLX 后端：避免使用模板缓冲区，如果您没有模板缓冲区，这很有用。</span>
+</span></span><span class=line><span class=cl><span class=c1># 在渲染透明内容时可能会导致不正确的不透明度（但绝不会</span>
+</span></span><span class=line><span class=cl><span class=c1># 实际上发生了）并且可能不适用于模糊背景。</span>
+</span></span><span class=line><span class=cl><span class=c1># 我的测试显示性能提升了 15%。推荐的。</span>
+</span></span><span class=line><span class=cl><span class=c1>#</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>glx-no-stencil <span class=o>=</span> true<span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># GLX 后端：避免在窗口损坏时重新绑定像素图。</span>
+</span></span><span class=line><span class=cl><span class=c1># 可能可以提高快速窗口内容更改的性能，</span>
+</span></span><span class=line><span class=cl><span class=c1># 但已知会破坏某些驱动程序（LLVMpipe、xf86-video-intel 等）。</span>
+</span></span><span class=line><span class=cl><span class=c1># 如果可行，推荐。</span>
+</span></span><span class=line><span class=cl><span class=c1>#</span>
+</span></span><span class=line><span class=cl><span class=c1># glx-no-rebind-pixmap = false</span>
+</span></span><span class=line><span class=cl><span class=c1># 禁用损坏信息。</span>
+</span></span><span class=line><span class=cl><span class=c1># 这会导致每次重绘整个屏幕，而不是屏幕的一部分</span>
+</span></span><span class=line><span class=cl><span class=c1>#实际上已经改变了。可能会降低性能，但可能会修复一些伪影。</span>
+</span></span><span class=line><span class=cl><span class=c1># 对立的选项是使用伤害</span>
+</span></span><span class=line><span class=cl><span class=c1>#</span>
+</span></span><span class=line><span class=cl><span class=c1># no-use-damage = false</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>use-damage <span class=o>=</span> true<span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 使用 X Sync fence 来同步客户端的draw call，确保所有draw</span>
+</span></span><span class=line><span class=cl><span class=c1># 调用在 picom 开始绘制之前完成。需要 nvidia 驱动程序</span>
+</span></span><span class=line><span class=cl><span class=c1># 为某些用户使用 GLX 后端。</span>
+</span></span><span class=line><span class=cl><span class=c1>#</span>
+</span></span><span class=line><span class=cl><span class=c1># xrender-sync-fence = false</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># GLX 后端：使用指定的 GLSL 片段着色器来渲染窗口内容。</span>
+</span></span><span class=line><span class=cl><span class=c1># 参见 `compton-default-fshader-win.glsl` 和 `compton-fake-transparency-fshader-win.glsl`</span>
+</span></span><span class=line><span class=cl><span class=c1># 在源代码树中作为示例。</span>
+</span></span><span class=line><span class=cl><span class=c1>#</span>
+</span></span><span class=line><span class=cl><span class=c1># glx-fshader-win = &#34;&#34;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 强制所有窗口使用混合进行绘制。如果你有用</span>
+</span></span><span class=line><span class=cl><span class=c1># 有一个 glx-fshader-win 可以把不透明的像素变成透明的。</span>
+</span></span><span class=line><span class=cl><span class=c1>#</span>
+</span></span><span class=line><span class=cl><span class=c1># force-win-blend = false</span>
+</span></span><span class=line><span class=cl><span class=c1># 不要使用 EWMH 检测全屏窗口。</span>
+</span></span><span class=line><span class=cl><span class=c1># 恢复为仅根据其大小和坐标检查窗口是否为全屏。</span>
+</span></span><span class=line><span class=cl><span class=c1>#</span>
+</span></span><span class=line><span class=cl><span class=c1># no-ewmh-fullscreen = false</span>
+</span></span><span class=line><span class=cl><span class=c1># 调暗明亮的窗户，使其亮度不超过此设定值。</span>
+</span></span><span class=line><span class=cl><span class=c1># 窗口的亮度是通过平均窗口中的所有像素来估计的，</span>
+</span></span><span class=line><span class=cl><span class=c1># 所以这可能会带来性能损失。</span>
+</span></span><span class=line><span class=cl><span class=c1># 将此设置为 1.0 会禁用此行为。需要禁用 --use-damage。 （默认值：1.0）</span>
+</span></span><span class=line><span class=cl><span class=c1>#</span>
+</span></span><span class=line><span class=cl><span class=c1># max-brightness = 1.0</span>
+</span></span><span class=line><span class=cl><span class=c1># 让透明窗口像非透明窗口一样剪辑其他窗口，</span>
+</span></span><span class=line><span class=cl><span class=c1># 而不是在它们之上混合。</span>
+</span></span><span class=line><span class=cl><span class=c1>#</span>
+</span></span><span class=line><span class=cl><span class=c1># transparent-clipping = false</span>
+</span></span><span class=line><span class=cl><span class=c1># 设置日志级别。可能的值为：</span>
+</span></span><span class=line><span class=cl><span class=c1>#  &#34;trace&#34;, &#34;debug&#34;, &#34;info&#34;, &#34;warn&#34;, &#34;error&#34;</span>
+</span></span><span class=line><span class=cl><span class=c1># 越来越重要。大小写无关紧要。</span>
+</span></span><span class=line><span class=cl><span class=c1># 如果使用“TRACE”日志级别，最好登录到文件中</span>
+</span></span><span class=line><span class=cl><span class=c1># 使用 *--log-file*，因为它可以生成大量日志。</span>
+</span></span><span class=line><span class=cl><span class=c1>#</span>
+</span></span><span class=line><span class=cl><span class=c1># log-level = &#34;debug&#34;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>log-level <span class=o>=</span> <span class=s2>&#34;warn&#34;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 设置日志文件。</span>
+</span></span><span class=line><span class=cl><span class=c1># 如果 *--log-file* 从未指定，日志将被写入标准错误。</span>
+</span></span><span class=line><span class=cl><span class=c1># 否则，日志将写入给定文件，尽管一些早期的</span>
+</span></span><span class=line><span class=cl><span class=c1># 日志可能仍会写入标准错误。</span>
+</span></span><span class=line><span class=cl><span class=c1># 从配置文件中设置此选项时，建议使用绝对路径。</span>
+</span></span><span class=line><span class=cl><span class=c1>#</span>
+</span></span><span class=line><span class=cl><span class=c1># log-file = &#34;/path/to/your/log/file&#34;</span>
+</span></span><span class=line><span class=cl><span class=c1># 显示所有 X 错误（用于调试）</span>
+</span></span><span class=line><span class=cl><span class=c1># show-all-xerrors = false</span>
+</span></span><span class=line><span class=cl><span class=c1># 将进程 ID 写入文件。</span>
+</span></span><span class=line><span class=cl><span class=c1># write-pid-path = &#34;/path/to/your/log/file&#34;</span>
+</span></span><span class=line><span class=cl><span class=c1># 窗口类型设置</span>
+</span></span><span class=line><span class=cl><span class=c1>#</span>
+</span></span><span class=line><span class=cl><span class=c1># &#39;WINDOW_TYPE&#39; 是 EWMH 标准中定义的 15 种窗口类型之一：</span>
+</span></span><span class=line><span class=cl><span class=c1>#     &#34;unknown&#34;, &#34;desktop&#34;, &#34;dock&#34;, &#34;toolbar&#34;, &#34;menu&#34;, &#34;utility&#34;,</span>
+</span></span><span class=line><span class=cl><span class=c1>#     &#34;splash&#34;, &#34;dialog&#34;, &#34;normal&#34;, &#34;dropdown_menu&#34;, &#34;popup_menu&#34;,</span>
+</span></span><span class=line><span class=cl><span class=c1>#     &#34;tooltip&#34;, &#34;notification&#34;, &#34;combo&#34;, and &#34;dnd&#34;.</span>
+</span></span><span class=line><span class=cl><span class=c1>#</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 以下每个窗口类型选项可用：::</span>
+</span></span><span class=line><span class=cl><span class=c1>#</span>
+</span></span><span class=line><span class=cl><span class=c1>#   fade, shadow:::</span>
+</span></span><span class=line><span class=cl><span class=c1>#     Controls window-type-specific shadow and fade settings.</span>
+</span></span><span class=line><span class=cl><span class=c1>#</span>
+</span></span><span class=line><span class=cl><span class=c1>#   opacity:::</span>
+</span></span><span class=line><span class=cl><span class=c1>#     Controls default opacity of the window type.</span>
+</span></span><span class=line><span class=cl><span class=c1>#</span>
+</span></span><span class=line><span class=cl><span class=c1>#   focus:::</span>
+</span></span><span class=line><span class=cl><span class=c1>#     Controls whether the window of this type is to be always considered focused.</span>
+</span></span><span class=line><span class=cl><span class=c1>#     (By default, all window types except &#34;normal&#34; and &#34;dialog&#34; has this on.)</span>
+</span></span><span class=line><span class=cl><span class=c1>#</span>
+</span></span><span class=line><span class=cl><span class=c1>#   full-shadow:::</span>
+</span></span><span class=line><span class=cl><span class=c1>#     Controls whether shadow is drawn under the parts of the window that you</span>
+</span></span><span class=line><span class=cl><span class=c1>#     normally won&#39;t be able to see. Useful when the window has parts of it</span>
+</span></span><span class=line><span class=cl><span class=c1>#     transparent, and you want shadows in those areas.</span>
+</span></span><span class=line><span class=cl><span class=c1>#</span>
+</span></span><span class=line><span class=cl><span class=c1>#   clip-shadow-above:::</span>
+</span></span><span class=line><span class=cl><span class=c1>#     Controls wether shadows that would have been drawn above the window should</span>
+</span></span><span class=line><span class=cl><span class=c1>#     be clipped. Useful for dock windows that should have no shadow painted on top.</span>
+</span></span><span class=line><span class=cl><span class=c1>#</span>
+</span></span><span class=line><span class=cl><span class=c1>#   redir-ignore:::</span>
+</span></span><span class=line><span class=cl><span class=c1>#     Controls whether this type of windows should cause screen to become</span>
+</span></span><span class=line><span class=cl><span class=c1>#     redirected again after been unredirected. If you have unredir-if-possible</span>
+</span></span><span class=line><span class=cl><span class=c1>#     set, and doesn&#39;t want certain window to cause unnecessary screen redirection,</span>
+</span></span><span class=line><span class=cl><span class=c1>#     you can set this to `true`.</span>
+</span></span><span class=line><span class=cl><span class=c1>#</span>
+</span></span><span class=line><span class=cl>wintypes:
+</span></span><span class=line><span class=cl><span class=o>{</span>
+</span></span><span class=line><span class=cl>  <span class=nv>tooltip</span> <span class=o>=</span> <span class=o>{</span> <span class=nv>fade</span> <span class=o>=</span> true<span class=p>;</span> <span class=nv>shadow</span> <span class=o>=</span> false<span class=p>;</span> <span class=nv>opacity</span> <span class=o>=</span> 0.75<span class=p>;</span> <span class=nv>focus</span> <span class=o>=</span> true<span class=p>;</span> full-shadow <span class=o>=</span> false<span class=p>;</span> <span class=o>}</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>  <span class=nv>dock</span> <span class=o>=</span> <span class=o>{</span> <span class=nv>shadow</span> <span class=o>=</span> false<span class=p>;</span> clip-shadow-above <span class=o>=</span> true<span class=p>;</span> <span class=o>}</span>
+</span></span><span class=line><span class=cl>  <span class=nv>dnd</span> <span class=o>=</span> <span class=o>{</span> <span class=nv>shadow</span> <span class=o>=</span> false<span class=p>;</span> <span class=o>}</span>
+</span></span><span class=line><span class=cl>  <span class=nv>popup_menu</span> <span class=o>=</span> <span class=o>{</span> <span class=nv>opacity</span> <span class=o>=</span> 0.8<span class=p>;</span> <span class=o>}</span>
+</span></span><span class=line><span class=cl>  <span class=nv>dropdown_menu</span> <span class=o>=</span> <span class=o>{</span> <span class=nv>opacity</span> <span class=o>=</span> 0.8<span class=p>;</span> <span class=o>}</span>
+</span></span><span class=line><span class=cl><span class=o>}</span><span class=p>;</span></span></span></code></pre></div></div><hr><h2 class="relative group">安装后软件安装<div id=安装后软件安装 class=anchor></div><span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none"><a class="text-primary-300 dark:text-neutral-700 !no-underline" href=#%e5%ae%89%e8%a3%85%e5%90%8e%e8%bd%af%e4%bb%b6%e5%ae%89%e8%a3%85 aria-label=锚点>#</a></span></h2><h3 class="relative group">浏览器安装<div id=浏览器安装 class=anchor></div><span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none"><a class="text-primary-300 dark:text-neutral-700 !no-underline" href=#%e6%b5%8f%e8%a7%88%e5%99%a8%e5%ae%89%e8%a3%85 aria-label=锚点>#</a></span></h3><p>我是直接终端下载Chrome的deb安装包安装</p><div class=highlight-wrapper><div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb</span></span></code></pre></div></div><p>然后本地安装</p><div class=highlight-wrapper><div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>sudo apt install google*.deb</span></span></code></pre></div></div><h3 class="relative group">spark store安装<div id=spark-store安装 class=anchor></div><span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none"><a class="text-primary-300 dark:text-neutral-700 !no-underline" href=#spark-store%e5%ae%89%e8%a3%85 aria-label=锚点>#</a></span></h3><p>打开浏览器并访问其官网或<a href=https://gitee.com/spark-store-project/spark-store/releases/download/4.2.12/spark-store_4.2.12_amd64.deb target=_blank rel=noreferrer>点此下载4.2.12的amd64安装包</a></p><p>然后打开终端</p><div class=highlight-wrapper><div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=nb>cd</span> ./Download
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>sudo apt install spark*.deb</span></span></code></pre></div></div><p>随后使用Mod+D即可找到星火商店。</p><h3 class="relative group">Alacritty<div id=alacritty class=anchor></div><span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none"><a class="text-primary-300 dark:text-neutral-700 !no-underline" href=#alacritty aria-label=锚点>#</a></span></h3><p>配置文件的位置在/home/username/.config/alacritty/alacritty.yml（若不存在可自行创建）</p><p>下面是我的配置，使用前要安装JetBrains Mono字体</p><div class=highlight-wrapper><div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=c1># Colors (Aura Theme)</span>
+</span></span><span class=line><span class=cl>colors:
+</span></span><span class=line><span class=cl>  <span class=c1># Default colors</span>
+</span></span><span class=line><span class=cl>  primary:
+</span></span><span class=line><span class=cl>    background: <span class=s1>&#39;#15141b&#39;</span>
+</span></span><span class=line><span class=cl>    foreground: <span class=s1>&#39;#edecee&#39;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>  cursor:
+</span></span><span class=line><span class=cl>    cursor: <span class=s1>&#39;#00D1FF&#39;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>  selection:
+</span></span><span class=line><span class=cl>    bash: CellForeground
+</span></span><span class=line><span class=cl>    background: <span class=s1>&#39;#29263c&#39;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>  <span class=c1># Normal colors</span>
+</span></span><span class=line><span class=cl>  normal:
+</span></span><span class=line><span class=cl>    black: <span class=s1>&#39;#110f18&#39;</span>
+</span></span><span class=line><span class=cl>    red: <span class=s1>&#39;#ff6767&#39;</span>
+</span></span><span class=line><span class=cl>    green: <span class=s1>&#39;#61ffca&#39;</span>
+</span></span><span class=line><span class=cl>    yellow: <span class=s1>&#39;#ffca85&#39;</span>
+</span></span><span class=line><span class=cl>    blue: <span class=s1>&#39;#a277ff&#39;</span>
+</span></span><span class=line><span class=cl>    magenta: <span class=s1>&#39;#a277ff&#39;</span>
+</span></span><span class=line><span class=cl>    cyan: <span class=s1>&#39;#61ffca&#39;</span>
+</span></span><span class=line><span class=cl>    white: <span class=s1>&#39;#edecee&#39;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>  <span class=c1># Bright colors</span>
+</span></span><span class=line><span class=cl>  bright:
+</span></span><span class=line><span class=cl>    black: <span class=s1>&#39;#4d4d4d&#39;</span>
+</span></span><span class=line><span class=cl>    red: <span class=s1>&#39;#ff6767&#39;</span>
+</span></span><span class=line><span class=cl>    green: <span class=s1>&#39;#61ffca&#39;</span>
+</span></span><span class=line><span class=cl>    yellow: <span class=s1>&#39;#ffca85&#39;</span>
+</span></span><span class=line><span class=cl>    blue: <span class=s1>&#39;#a277ff&#39;</span>
+</span></span><span class=line><span class=cl>    magenta: <span class=s1>&#39;#a277ff&#39;</span>
+</span></span><span class=line><span class=cl>    cyan: <span class=s1>&#39;#61ffca&#39;</span>
+</span></span><span class=line><span class=cl>    white: <span class=s1>&#39;#edecee&#39;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>  search:
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    matches:
+</span></span><span class=line><span class=cl>      foreground: <span class=s1>&#39;#000000&#39;</span>
+</span></span><span class=line><span class=cl>      background: <span class=s1>&#39;#ffffff&#39;</span>
+</span></span><span class=line><span class=cl>    focused_match:
+</span></span><span class=line><span class=cl>      foreground: <span class=s1>&#39;#ffffff&#39;</span>
+</span></span><span class=line><span class=cl>      background: <span class=s1>&#39;#00D1FF&#39;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 设置字体</span>
+</span></span><span class=line><span class=cl>font:
+</span></span><span class=line><span class=cl>  normal:
+</span></span><span class=line><span class=cl>    family: <span class=s1>&#39;JetBrains Mono&#39;</span>
+</span></span><span class=line><span class=cl>    style: Regular
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>  bold:
+</span></span><span class=line><span class=cl>    family: <span class=s1>&#39;JetBrains Mono&#39;</span>
+</span></span><span class=line><span class=cl>    style: Regular
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>  italic:
+</span></span><span class=line><span class=cl>    family: <span class=s1>&#39;JetBrains Mono&#39;</span>
+</span></span><span class=line><span class=cl>    style: Italic
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>  bold_italic:
+</span></span><span class=line><span class=cl>    family: <span class=s1>&#39;JetBrains Mono&#39;</span>
+</span></span><span class=line><span class=cl>    style: Italic
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>  <span class=c1># 字大小</span>
+</span></span><span class=line><span class=cl>  size: <span class=m>8</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>  offset:
+</span></span><span class=line><span class=cl>    x: <span class=m>0</span>
+</span></span><span class=line><span class=cl>    y: <span class=m>1</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>  glyph_offset:
+</span></span><span class=line><span class=cl>    x: <span class=m>0</span>
+</span></span><span class=line><span class=cl>    y: <span class=m>1</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>window:
+</span></span><span class=line><span class=cl>  padding:
+</span></span><span class=line><span class=cl>    x: <span class=m>22</span>
+</span></span><span class=line><span class=cl>    y: <span class=m>22</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>  decorations: transparent
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>  dimensions:
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    columns: <span class=m>80</span>
+</span></span><span class=line><span class=cl>    lines: <span class=m>25</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>scrolling:
+</span></span><span class=line><span class=cl>  <span class=c1># 回滚缓冲区中的最大行数,指定“0”将禁用滚动。</span>
+</span></span><span class=line><span class=cl>  history: <span class=m>100000</span>
+</span></span><span class=line><span class=cl>  <span class=c1># 滚动行数</span>
+</span></span><span class=line><span class=cl>  multiplier: <span class=m>4</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>cursor:
+</span></span><span class=line><span class=cl>  style:
+</span></span><span class=line><span class=cl>    shape: Beam
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 如果为‘true’，则使用亮色变体绘制粗体文本。</span>
+</span></span><span class=line><span class=cl>draw_bold_bash_with_bright_colors: <span class=nb>false</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>selection:
+</span></span><span class=line><span class=cl>  semantic_escape_chars: <span class=s1>&#39;,│`|:&#34;&#39;&#39; ()[]{}&lt;&gt;&#39;</span>
+</span></span><span class=line><span class=cl>  save_to_clipboard: <span class=nb>true</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>live_config_reload: <span class=nb>true</span>
+</span></span><span class=line><span class=cl>key_bindings:
+</span></span><span class=line><span class=cl>  - <span class=o>{</span> key: R, mods: Command, mode: ~Vi<span class=p>|</span>~Search, chars: <span class=s2>&#34;\x0c&#34;</span> <span class=o>}</span>
+</span></span><span class=line><span class=cl>  - <span class=o>{</span> key: R, mods: Command, mode: ~Vi<span class=p>|</span>~Search, action: ClearHistory <span class=o>}</span>
+</span></span><span class=line><span class=cl>  - <span class=o>{</span> key: W, mods: Command, action: Hide <span class=o>}</span>
+</span></span><span class=line><span class=cl>  - <span class=o>{</span> key: W, mods: Command<span class=p>|</span>Shift, action: Quit <span class=o>}</span>
+</span></span><span class=line><span class=cl>  - <span class=o>{</span> key: N, mods: Command, action: SpawnNewInstance <span class=o>}</span>
+</span></span><span class=line><span class=cl>  - <span class=o>{</span> key: T, mods: Command, action: CreateNewWindow <span class=o>}</span>
+</span></span><span class=line><span class=cl>  - <span class=o>{</span> key: Left, mods: Alt, chars: <span class=s2>&#34;\x1bb&#34;</span> <span class=o>}</span> <span class=c1># Skip word left</span>
+</span></span><span class=line><span class=cl>  - <span class=o>{</span> key: Right, mods: Alt, chars: <span class=s2>&#34;\x1bf&#34;</span> <span class=o>}</span> <span class=c1># Skip word right</span>
+</span></span><span class=line><span class=cl>  - <span class=o>{</span> key: Left, mods: Command, chars: <span class=s2>&#34;\x01&#34;</span> <span class=o>}</span> <span class=c1># Home</span>
+</span></span><span class=line><span class=cl>  - <span class=o>{</span> key: Right, mods: Command, chars: <span class=s2>&#34;\x05&#34;</span> <span class=o>}</span> <span class=c1># End</span>
+</span></span><span class=line><span class=cl>  - <span class=o>{</span> key: Back, mods: Command, chars: <span class=s2>&#34;\x15&#34;</span> <span class=o>}</span> <span class=c1># Delete line</span>
+</span></span><span class=line><span class=cl>  - <span class=o>{</span> key: Back, mods: Alt, chars: <span class=s2>&#34;\x1b\x7f&#34;</span> <span class=o>}</span> <span class=c1># Delete word</span></span></span></code></pre></div></div><h3 class="relative group">Ranger<div id=ranger class=anchor></div><span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none"><a class="text-primary-300 dark:text-neutral-700 !no-underline" href=#ranger aria-label=锚点>#</a></span></h3><div class=highlight-wrapper><div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>输入：ranger --copy-config<span class=o>=</span>all</span></span></code></pre></div></div><p>在./home/username/.config/ranger/rc.conf中可以调整字体的大小</p><h3 class="relative group">Redshift<div id=redshift class=anchor></div><span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none"><a class="text-primary-300 dark:text-neutral-700 !no-underline" href=#redshift aria-label=锚点>#</a></span></h3><p>在./home/username/.config目录下新建redshift.conf</p><p>下面是我的配置文件：</p><div class=highlight-wrapper><div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=p>;</span> Global settings <span class=k>for</span> redshift
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=o>[</span>redshift<span class=o>]</span>
+</span></span><span class=line><span class=cl><span class=p>;</span> Set the day and night screen temperatures
+</span></span><span class=line><span class=cl>temp-day<span class=o>=</span><span class=m>5000</span>
+</span></span><span class=line><span class=cl>temp-night<span class=o>=</span><span class=m>3500</span>
+</span></span><span class=line><span class=cl><span class=p>;</span> Enable/Disable a smooth transition between day and night
+</span></span><span class=line><span class=cl><span class=p>;</span> <span class=m>0</span> will cause a direct change from day to night screen temperature.
+</span></span><span class=line><span class=cl><span class=p>;</span> <span class=m>1</span> will gradually increase or decrease the screen temperature.
+</span></span><span class=line><span class=cl><span class=nv>transition</span><span class=o>=</span><span class=m>1</span>
+</span></span><span class=line><span class=cl><span class=p>;</span> Set the screen brightness. Default is 1.0.
+</span></span><span class=line><span class=cl><span class=p>;</span><span class=nv>brightness</span><span class=o>=</span>0.9
+</span></span><span class=line><span class=cl><span class=p>;</span> It is also possible to use different settings <span class=k>for</span> day and night
+</span></span><span class=line><span class=cl><span class=p>;</span> since version 1.8.
+</span></span><span class=line><span class=cl><span class=p>;</span>brightness-day<span class=o>=</span>0.7
+</span></span><span class=line><span class=cl><span class=p>;</span>brightness-night<span class=o>=</span>0.4
+</span></span><span class=line><span class=cl><span class=p>;</span> Set the screen gamma <span class=o>(</span><span class=k>for</span> all colors, or each color channel
+</span></span><span class=line><span class=cl><span class=p>;</span> individually<span class=o>)</span>
+</span></span><span class=line><span class=cl><span class=nv>gamma</span><span class=o>=</span>0.8
+</span></span><span class=line><span class=cl><span class=p>;</span><span class=nv>gamma</span><span class=o>=</span>0.8:0.7:0.8
+</span></span><span class=line><span class=cl><span class=p>;</span> This can also be <span class=nb>set</span> individually <span class=k>for</span> day and night since
+</span></span><span class=line><span class=cl><span class=p>;</span> version 1.10.
+</span></span><span class=line><span class=cl><span class=p>;</span>gamma-day<span class=o>=</span>0.8:0.7:0.8
+</span></span><span class=line><span class=cl><span class=p>;</span>gamma-night<span class=o>=</span>0.6
+</span></span><span class=line><span class=cl><span class=p>;</span> Set the location-provider: geoclue, geoclue2, manual
+</span></span><span class=line><span class=cl><span class=p>;</span> <span class=nb>type</span> redshift -l list to see possible values.
+</span></span><span class=line><span class=cl><span class=p>;</span> The location provider settings are in a different section.
+</span></span><span class=line><span class=cl>location-provider<span class=o>=</span>manual
+</span></span><span class=line><span class=cl><span class=p>;</span> Set the adjustment-method: randr, vidmode
+</span></span><span class=line><span class=cl><span class=p>;</span> <span class=nb>type</span> redshift -m list to see all possible values.
+</span></span><span class=line><span class=cl><span class=p>;</span> randr is the preferred method, vidmode is an older API.
+</span></span><span class=line><span class=cl><span class=p>;</span> but works in some cases when randr does not.
+</span></span><span class=line><span class=cl><span class=p>;</span> The adjustment method settings are in a different section.
+</span></span><span class=line><span class=cl>adjustment-method<span class=o>=</span>randr
+</span></span><span class=line><span class=cl><span class=p>;</span> Configuration of the location-provider:
+</span></span><span class=line><span class=cl><span class=p>;</span> <span class=nb>type</span> redshift -l PROVIDER:help to see the settings.
+</span></span><span class=line><span class=cl><span class=p>;</span> ex: redshift -l manual:help
+</span></span><span class=line><span class=cl><span class=p>;</span> Keep in mind that longitudes west of Greenwich <span class=o>(</span>e.g. the Americas<span class=o>)</span>
+</span></span><span class=line><span class=cl><span class=p>;</span> are negative numbers.
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=o>[</span>manual<span class=o>]</span>
+</span></span><span class=line><span class=cl><span class=nv>lat</span><span class=o>=</span>22.5
+</span></span><span class=line><span class=cl><span class=nv>lon</span><span class=o>=</span>88.3
+</span></span><span class=line><span class=cl><span class=p>;</span> Configuration of the adjustment-method
+</span></span><span class=line><span class=cl><span class=p>;</span> <span class=nb>type</span> redshift -m METHOD:help to see the settings.
+</span></span><span class=line><span class=cl><span class=p>;</span> ex: redshift -m randr:help
+</span></span><span class=line><span class=cl><span class=p>;</span> In this example, randr is configured to adjust screen 1.
+</span></span><span class=line><span class=cl><span class=p>;</span> Note that the numbering starts from 0, so this is actually the
+</span></span><span class=line><span class=cl><span class=p>;</span> second screen. If this option is not specified, Redshift will try
+</span></span><span class=line><span class=cl><span class=p>;</span> to adjust _all_ screens.
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=o>[</span>randr<span class=o>]</span>
+</span></span><span class=line><span class=cl><span class=nv>screen</span><span class=o>=</span><span class=m>0</span></span></span></code></pre></div></div><h3 class="relative group">Vim<div id=vim class=anchor></div><span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none"><a class="text-primary-300 dark:text-neutral-700 !no-underline" href=#vim aria-label=锚点>#</a></span></h3><p>在./home/username目录下新建.vimrc文件</p><p>下面是我的配置文件：</p><div class=highlight-wrapper><div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=s2>&#34;=========================================================================
+</span></span></span><span class=line><span class=cl><span class=s2>&#34;</span>
+</span></span><span class=line><span class=cl><span class=s2>&#34;&#34;</span> 根据他人配置进行增加个性化设置
+</span></span><span class=line><span class=cl><span class=s2>&#34;
+</span></span></span><span class=line><span class=cl><span class=s2>&#34;&#34;=========================================================================
+</span></span></span><span class=line><span class=cl><span class=s2>
+</span></span></span><span class=line><span class=cl><span class=s2>map &lt;F3&gt; :Explore&lt;CR&gt;
+</span></span></span><span class=line><span class=cl><span class=s2>map &lt;S-F3&gt; :Vexplore&lt;CR&gt;
+</span></span></span><span class=line><span class=cl><span class=s2>map &lt;C-F3&gt; :Sexplore&lt;CR&gt;  
+</span></span></span><span class=line><span class=cl><span class=s2>
+</span></span></span><span class=line><span class=cl><span class=s2>imap jk &lt;Esc&gt;
+</span></span></span><span class=line><span class=cl><span class=s2>
+</span></span></span><span class=line><span class=cl><span class=s2>nmap &lt;space&gt; :
+</span></span></span><span class=line><span class=cl><span class=s2>
+</span></span></span><span class=line><span class=cl><span class=s2>syntax on</span></span></span></code></pre></div></div></div><h2 class="mt-8 text-2xl font-extrabold mb-10">相关文章</h2><section class="w-full grid gap-4 sm:grid-cols-2 md:grid-cols-3"><article class="article-link--related relative min-h-full min-w-full overflow-hidden rounded-lg border border-neutral-300 dark:border-neutral-600"><div class="flex-none relative overflow-hidden thumbnail_card_related"><img src=/posts/linux%E6%8E%A2%E7%B4%A2%E6%97%A5%E5%BF%97/debian13%E5%AE%89%E8%A3%85/featured_hu_3488b0f9ac129de8.jpg role=presentation loading=lazy decoding=async fetchpriority=low class="not-prose absolute inset-0 w-full h-full object-cover"></div><div class=p-4><header><a href=/posts/linux%E6%8E%A2%E7%B4%A2%E6%97%A5%E5%BF%97/debian13%E5%AE%89%E8%A3%85/ class="not-prose before:absolute before:inset-0 decoration-primary-500 dark:text-neutral text-xl font-bold text-neutral-800 hover:underline hover:underline-offset-2"><h2>Debian13安装</h2></a></header><div class="text-sm text-neutral-500 dark:text-neutral-400"><div class="flex flex-row flex-wrap items-center"><time datetime=2026-03-15T00:00:00+08:00>2026-03-15</time><span class="px-2 text-primary-500">&#183;</span><span>1199 字</span><span class="px-2 text-primary-500">&#183;</span><span title=预计阅读>3 分钟</span></div><div class="flex flex-row flex-wrap items-center"></div><div class="flex flex-row flex-wrap items-center"><a class="relative mt-[0.5rem] me-2" href=/categories/linux%E6%8E%A2%E7%B4%A2%E6%97%A5%E5%BF%97/><span class="flex cursor-pointer"><span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">Linux探索日志</span></span></a></div></div></div><div class="px-6 pt-4 pb-2"></div></article><article class="article-link--related relative min-h-full min-w-full overflow-hidden rounded-lg border border-neutral-300 dark:border-neutral-600"><div class="flex-none relative overflow-hidden thumbnail_card_related"><img src=/posts/%E9%9B%B6%E7%A2%8E%E9%9A%8F%E7%AC%94/openclawclawbot%E9%83%A8%E7%BD%B2%E7%AC%94%E8%AE%B0/featured_hu_7bd05bf5aba763a.png role=presentation loading=lazy decoding=async fetchpriority=low class="not-prose absolute inset-0 w-full h-full object-cover"></div><div class=p-4><header><a href=/posts/%E9%9B%B6%E7%A2%8E%E9%9A%8F%E7%AC%94/openclawclawbot%E9%83%A8%E7%BD%B2%E7%AC%94%E8%AE%B0/ class="not-prose before:absolute before:inset-0 decoration-primary-500 dark:text-neutral text-xl font-bold text-neutral-800 hover:underline hover:underline-offset-2"><h2>openclaw(clawbot)部署笔记</h2></a></header><div class="text-sm text-neutral-500 dark:text-neutral-400"><div class="flex flex-row flex-wrap items-center"><time datetime=2026-03-15T00:00:00+08:00>2026-03-15</time><span class="px-2 text-primary-500">&#183;</span><span>477 字</span><span class="px-2 text-primary-500">&#183;</span><span title=预计阅读>1 分钟</span></div><div class="flex flex-row flex-wrap items-center"></div><div class="flex flex-row flex-wrap items-center"><a class="relative mt-[0.5rem] me-2" href=/categories/%E9%9B%B6%E7%A2%8E%E9%9A%8F%E7%AC%94/><span class="flex cursor-pointer"><span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">零碎随笔</span></span></a></div></div></div><div class="px-6 pt-4 pb-2"></div></article><article class="article-link--related relative min-h-full min-w-full overflow-hidden rounded-lg border border-neutral-300 dark:border-neutral-600"><div class="flex-none relative overflow-hidden thumbnail_card_related"><img src=/posts/%E9%9B%B6%E7%A2%8E%E9%9A%8F%E7%AC%94/%E6%99%B6%E6%99%A8s905l%E5%88%B7openwrt/featured_hu_5f0d1ce338f001ac.png role=presentation loading=lazy decoding=async fetchpriority=low class="not-prose absolute inset-0 w-full h-full object-cover"></div><div class=p-4><header><a href=/posts/%E9%9B%B6%E7%A2%8E%E9%9A%8F%E7%AC%94/%E6%99%B6%E6%99%A8s905l%E5%88%B7openwrt/ class="not-prose before:absolute before:inset-0 decoration-primary-500 dark:text-neutral text-xl font-bold text-neutral-800 hover:underline hover:underline-offset-2"><h2>晶晨S905L刷OpenWrt</h2></a></header><div class="text-sm text-neutral-500 dark:text-neutral-400"><div class="flex flex-row flex-wrap items-center"><time datetime=2026-03-15T00:00:00+08:00>2026-03-15</time><span class="px-2 text-primary-500">&#183;</span><span>700 字</span><span class="px-2 text-primary-500">&#183;</span><span title=预计阅读>2 分钟</span></div><div class="flex flex-row flex-wrap items-center"></div><div class="flex flex-row flex-wrap items-center"><a class="relative mt-[0.5rem] me-2" href=/categories/%E9%9B%B6%E7%A2%8E%E9%9A%8F%E7%AC%94/><span class="flex cursor-pointer"><span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">零碎随笔</span></span></a></div></div></div><div class="px-6 pt-4 pb-2"></div></article><article class="article-link--related relative min-h-full min-w-full overflow-hidden rounded-lg border border-neutral-300 dark:border-neutral-600"><div class="flex-none relative overflow-hidden thumbnail_card_related"><img src=/posts/web%E5%89%8D%E7%AB%AF%E7%AC%94%E8%AE%B0/css%E9%80%89%E6%8B%A9%E5%99%A8/featured_hu_cf6c58f42360a222.png role=presentation loading=lazy decoding=async fetchpriority=low class="not-prose absolute inset-0 w-full h-full object-cover"></div><div class=p-4><header><a href=/posts/web%E5%89%8D%E7%AB%AF%E7%AC%94%E8%AE%B0/css%E9%80%89%E6%8B%A9%E5%99%A8/ class="not-prose before:absolute before:inset-0 decoration-primary-500 dark:text-neutral text-xl font-bold text-neutral-800 hover:underline hover:underline-offset-2"><h2>CSS选择器</h2></a></header><div class="text-sm text-neutral-500 dark:text-neutral-400"><div class="flex flex-row flex-wrap items-center"><time datetime=2026-03-15T00:00:00+08:00>2026-03-15</time><span class="px-2 text-primary-500">&#183;</span><span>3330 字</span><span class="px-2 text-primary-500">&#183;</span><span title=预计阅读>7 分钟</span></div><div class="flex flex-row flex-wrap items-center"></div><div class="flex flex-row flex-wrap items-center"><a class="relative mt-[0.5rem] me-2" href=/categories/web%E5%89%8D%E7%AB%AF%E7%AC%94%E8%AE%B0/><span class="flex cursor-pointer"><span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">Web前端笔记</span></span></a></div></div></div><div class="px-6 pt-4 pb-2"></div></article><article class="article-link--related relative min-h-full min-w-full overflow-hidden rounded-lg border border-neutral-300 dark:border-neutral-600"><div class="flex-none relative overflow-hidden thumbnail_card_related"><img src=/posts/%E9%9B%B6%E7%A2%8E%E9%9A%8F%E7%AC%94/debian%E9%85%8D%E7%BD%AE%E9%9D%99%E6%80%81ip%E8%A7%A3%E5%86%B3dns%E6%97%A0%E6%B3%95%E8%A7%A3%E6%9E%90%E9%97%AE%E9%A2%98/featured_hu_3bb1f3523785070e.png role=presentation loading=lazy decoding=async fetchpriority=low class="not-prose absolute inset-0 w-full h-full object-cover"></div><div class=p-4><header><a href=/posts/%E9%9B%B6%E7%A2%8E%E9%9A%8F%E7%AC%94/debian%E9%85%8D%E7%BD%AE%E9%9D%99%E6%80%81ip%E8%A7%A3%E5%86%B3dns%E6%97%A0%E6%B3%95%E8%A7%A3%E6%9E%90%E9%97%AE%E9%A2%98/ class="not-prose before:absolute before:inset-0 decoration-primary-500 dark:text-neutral text-xl font-bold text-neutral-800 hover:underline hover:underline-offset-2"><h2>Debian配置静态IP解决DNS无法解析问题</h2></a></header><div class="text-sm text-neutral-500 dark:text-neutral-400"><div class="flex flex-row flex-wrap items-center"><time datetime=2026-03-15T00:00:00+08:00>2026-03-15</time><span class="px-2 text-primary-500">&#183;</span><span>412 字</span><span class="px-2 text-primary-500">&#183;</span><span title=预计阅读>1 分钟</span></div><div class="flex flex-row flex-wrap items-center"></div><div class="flex flex-row flex-wrap items-center"><a class="relative mt-[0.5rem] me-2" href=/categories/%E9%9B%B6%E7%A2%8E%E9%9A%8F%E7%AC%94/><span class="flex cursor-pointer"><span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">零碎随笔</span></span></a></div></div></div><div class="px-6 pt-4 pb-2"></div></article><article class="article-link--related relative min-h-full min-w-full overflow-hidden rounded-lg border border-neutral-300 dark:border-neutral-600"><div class="flex-none relative overflow-hidden thumbnail_card_related"><img src=/posts/%E9%9B%B6%E7%A2%8E%E9%9A%8F%E7%AC%94/docker%E9%83%A8%E7%BD%B2navidrome+musictagweb%E6%90%AD%E5%BB%BA%E7%A7%81%E4%BA%BA%E9%9F%B3%E4%B9%90%E5%BA%93/featured_hu_94305529e86b49a2.png role=presentation loading=lazy decoding=async fetchpriority=low class="not-prose absolute inset-0 w-full h-full object-cover"></div><div class=p-4><header><a href=/posts/%E9%9B%B6%E7%A2%8E%E9%9A%8F%E7%AC%94/docker%E9%83%A8%E7%BD%B2navidrome+musictagweb%E6%90%AD%E5%BB%BA%E7%A7%81%E4%BA%BA%E9%9F%B3%E4%B9%90%E5%BA%93/ class="not-prose before:absolute before:inset-0 decoration-primary-500 dark:text-neutral text-xl font-bold text-neutral-800 hover:underline hover:underline-offset-2"><h2>Docker部署Navidrome+MusicTagWeb搭建私人音乐库</h2></a></header><div class="text-sm text-neutral-500 dark:text-neutral-400"><div class="flex flex-row flex-wrap items-center"><time datetime=2026-03-15T00:00:00+08:00>2026-03-15</time><span class="px-2 text-primary-500">&#183;</span><span>541 字</span><span class="px-2 text-primary-500">&#183;</span><span title=预计阅读>2 分钟</span></div><div class="flex flex-row flex-wrap items-center"></div><div class="flex flex-row flex-wrap items-center"><a class="relative mt-[0.5rem] me-2" href=/categories/%E9%9B%B6%E7%A2%8E%E9%9A%8F%E7%AC%94/><span class="flex cursor-pointer"><span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">零碎随笔</span></span></a></div></div></div><div class="px-6 pt-4 pb-2"></div></article><article class="article-link--related relative min-h-full min-w-full overflow-hidden rounded-lg border border-neutral-300 dark:border-neutral-600"><div class="flex-none relative overflow-hidden thumbnail_card_related"><img src=/posts/web%E5%89%8D%E7%AB%AF%E7%AC%94%E8%AE%B0/flex%E5%B8%83%E5%B1%80/featured_hu_cf6c58f42360a222.png role=presentation loading=lazy decoding=async fetchpriority=low class="not-prose absolute inset-0 w-full h-full object-cover"></div><div class=p-4><header><a href=/posts/web%E5%89%8D%E7%AB%AF%E7%AC%94%E8%AE%B0/flex%E5%B8%83%E5%B1%80/ class="not-prose before:absolute before:inset-0 decoration-primary-500 dark:text-neutral text-xl font-bold text-neutral-800 hover:underline hover:underline-offset-2"><h2>Flex布局</h2></a></header><div class="text-sm text-neutral-500 dark:text-neutral-400"><div class="flex flex-row flex-wrap items-center"><time datetime=2026-03-15T00:00:00+08:00>2026-03-15</time><span class="px-2 text-primary-500">&#183;</span><span>1319 字</span><span class="px-2 text-primary-500">&#183;</span><span title=预计阅读>3 分钟</span></div><div class="flex flex-row flex-wrap items-center"></div><div class="flex flex-row flex-wrap items-center"><a class="relative mt-[0.5rem] me-2" href=/categories/web%E5%89%8D%E7%AB%AF%E7%AC%94%E8%AE%B0/><span class="flex cursor-pointer"><span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">Web前端笔记</span></span></a></div></div></div><div class="px-6 pt-4 pb-2"></div></article><article class="article-link--related relative min-h-full min-w-full overflow-hidden rounded-lg border border-neutral-300 dark:border-neutral-600"><div class="flex-none relative overflow-hidden thumbnail_card_related"><img src=/posts/web%E5%89%8D%E7%AB%AF%E7%AC%94%E8%AE%B0/grid%E5%B8%83%E5%B1%80/featured_hu_cf6c58f42360a222.png role=presentation loading=lazy decoding=async fetchpriority=low class="not-prose absolute inset-0 w-full h-full object-cover"></div><div class=p-4><header><a href=/posts/web%E5%89%8D%E7%AB%AF%E7%AC%94%E8%AE%B0/grid%E5%B8%83%E5%B1%80/ class="not-prose before:absolute before:inset-0 decoration-primary-500 dark:text-neutral text-xl font-bold text-neutral-800 hover:underline hover:underline-offset-2"><h2>Grid布局</h2></a></header><div class="text-sm text-neutral-500 dark:text-neutral-400"><div class="flex flex-row flex-wrap items-center"><time datetime=2026-03-15T00:00:00+08:00>2026-03-15</time><span class="px-2 text-primary-500">&#183;</span><span>1222 字</span><span class="px-2 text-primary-500">&#183;</span><span title=预计阅读>3 分钟</span></div><div class="flex flex-row flex-wrap items-center"></div><div class="flex flex-row flex-wrap items-center"><a class="relative mt-[0.5rem] me-2" href=/categories/web%E5%89%8D%E7%AB%AF%E7%AC%94%E8%AE%B0/><span class="flex cursor-pointer"><span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">Web前端笔记</span></span></a></div></div></div><div class="px-6 pt-4 pb-2"></div></article><article class="article-link--related relative min-h-full min-w-full overflow-hidden rounded-lg border border-neutral-300 dark:border-neutral-600"><div class="flex-none relative overflow-hidden thumbnail_card_related"><img src=/posts/%E9%9B%B6%E7%A2%8E%E9%9A%8F%E7%AC%94/llvm+vs_codium%E6%90%AD%E5%BB%BAc%E8%AF%AD%E8%A8%80%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/featured_hu_84504da497bec468.jpg role=presentation loading=lazy decoding=async fetchpriority=low class="not-prose absolute inset-0 w-full h-full object-cover"></div><div class=p-4><header><a href=/posts/%E9%9B%B6%E7%A2%8E%E9%9A%8F%E7%AC%94/llvm+vs_codium%E6%90%AD%E5%BB%BAc%E8%AF%AD%E8%A8%80%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/ class="not-prose before:absolute before:inset-0 decoration-primary-500 dark:text-neutral text-xl font-bold text-neutral-800 hover:underline hover:underline-offset-2"><h2>LLVM+VS Codium搭建C语言开发环境</h2></a></header><div class="text-sm text-neutral-500 dark:text-neutral-400"><div class="flex flex-row flex-wrap items-center"><time datetime=2026-03-15T00:00:00+08:00>2026-03-15</time><span class="px-2 text-primary-500">&#183;</span><span>1256 字</span><span class="px-2 text-primary-500">&#183;</span><span title=预计阅读>3 分钟</span></div><div class="flex flex-row flex-wrap items-center"></div><div class="flex flex-row flex-wrap items-center"><a class="relative mt-[0.5rem] me-2" href=/categories/%E9%9B%B6%E7%A2%8E%E9%9A%8F%E7%AC%94/><span class="flex cursor-pointer"><span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">零碎随笔</span></span></a></div></div></div><div class="px-6 pt-4 pb-2"></div></article></section></div></section><footer class="pt-8 max-w-prose print:hidden"><div class=pt-8><hr class="border-dotted border-neutral-300 dark:border-neutral-600"><div class="flex justify-between pt-3"><span class="flex flex-col"><a class="flex text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400" href=/posts/linux%E6%8E%A2%E7%B4%A2%E6%97%A5%E5%BF%97/debian13%E5%AE%89%E8%A3%85/><span class=leading-6><span class="inline-block rtl:rotate-180">&larr;</span>&ensp;Debian13安装
+</span></a><span class="ms-6 mt-1 text-xs text-neutral-500 dark:text-neutral-400"><time datetime=2026-03-15T00:00:00+08:00>2026-03-15</time>
+</span></span><span class="flex flex-col items-end"><a class="flex text-right text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400" href=/posts/web%E5%89%8D%E7%AB%AF%E7%AC%94%E8%AE%B0/css%E9%80%89%E6%8B%A9%E5%99%A8/><span class=leading-6>CSS选择器&ensp;<span class="inline-block rtl:rotate-180">&rarr;</span>
+</span></a><span class="me-6 mt-1 text-xs text-neutral-500 dark:text-neutral-400"><time datetime=2026-03-15T00:00:00+08:00>2026-03-15</time></span></span></div></div></footer></article><div id=scroll-to-top class="fixed bottom-6 end-6 z-50 transform translate-y-4 opacity-0 duration-200"><a href=#the-top class="pointer-events-auto flex h-12 w-12 items-center justify-center rounded-full bg-neutral/50 text-xl text-neutral-700 hover:text-primary-600 dark:bg-neutral-800/50 dark:text-neutral dark:hover:text-primary-400" aria-label=返回顶部 title=返回顶部>&uarr;</a></div></main><footer id=site-footer class="py-10 print:hidden"><div class="flex items-center justify-between"><p class="text-sm text-neutral-500 dark:text-neutral-400">&copy;
+2026
+墨.</p><p class="text-xs text-neutral-500 dark:text-neutral-400">由 <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500" href=https://gohugo.io/ target=_blank rel="noopener noreferrer">Hugo</a> & <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500" href=https://blowfish.page/ target=_blank rel="noopener noreferrer">Blowfish</a> 强力驱动</p></div><script>mediumZoom(document.querySelectorAll("img:not(.nozoom)"),{margin:24,background:"rgba(0,0,0,0.5)",scrollOffset:0})</script></footer><div id=search-wrapper class="invisible fixed inset-0 flex h-screen w-screen cursor-default flex-col bg-neutral-500/50 p-4 backdrop-blur-sm dark:bg-neutral-900/50 sm:p-6 md:p-[10vh] lg:p-[12vh] z-500" data-url=https://lyle.qzz.io/><div id=search-modal class="flex flex-col w-full max-w-3xl min-h-0 mx-auto border rounded-md shadow-lg top-20 border-neutral-200 bg-neutral dark:border-neutral-700 dark:bg-neutral-800"><header class="relative z-10 flex items-center justify-between flex-none px-2"><form class="flex items-center flex-auto min-w-0"><div class="flex items-center justify-center w-8 h-8 text-neutral-400"><span class="relative block icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7 405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9.0 208 0S0 93.1.0 208s93.1 208 208 208c48.3.0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9.0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7.0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7.0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg></span></div><input type=search id=search-query class="flex flex-auto h-12 mx-1 bg-transparent appearance-none focus:outline-dotted focus:outline-2 focus:outline-transparent" placeholder=搜索 tabindex=0></form><button id=close-search-button class="flex items-center justify-center w-8 h-8 text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400" title="关闭 (Esc)">
+<span class="relative block icon"><svg viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75.0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3 54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75.0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75.0-45.25s32.75-12.5 45.25.0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25.0s12.5 32.75.0 45.25l-105.4 105.4L310.6 361.4z"/></svg></span></button></header><section class="flex-auto px-2 overflow-auto"><ul id=search-results></ul></section></div></div></div></body></html>
