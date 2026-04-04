@@ -34,28 +34,54 @@ description: "此页面是使用 Hugo 的 Blowfish 主题搭建的"
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
   transform: translateY(0);
   transition: 
-    background 0.2s ease,
-    box-shadow 0.2s ease,
-    transform 0.2s ease;
+    background 0.25s ease,
+    box-shadow 0.25s ease,
+    transform 0.25s ease,
+    border-color 0.25s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* 顶部渐变条效果 */
+.friend-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #5dc1d9 0%, #389bb0 50%, #5dc1d9 100%);
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-out;
+  z-index: 1;
 }
 
 .friend-card:hover {
-  background: rgba(6, 182, 212, 0.05);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  transform: translateY(-2px);
+  background: rgba(93, 193, 217, 0.06);
+  border-color: rgba(93, 193, 217, 0.2);
+  box-shadow: 
+    0 4px 12px rgba(93, 193, 217, 0.08),
+    0 2px 6px rgba(0, 0, 0, 0.08);
+  transform: translateY(-4px);
+}
+
+.friend-card:hover::before {
+  transform: translateX(0);
 }
 
 .friend-card:focus-visible {
   outline: none;
   box-shadow: 
-    0 0 0 2px rgba(6, 182, 212, 0.25),
+    0 0 0 3px rgba(93, 193, 217, 0.2),
+    0 6px 16px rgba(93, 193, 217, 0.1),
     0 2px 8px rgba(0, 0, 0, 0.1);
-  background: rgba(6, 182, 212, 0.04);
-  transform: translateY(-2px);
+  background: rgba(93, 193, 217, 0.06);
+  transform: translateY(-4px);
 }
 
 .friend-card:active {
-  transform: translateY(0);
+  transform: translateY(-1px);
+  transition-duration: 0.1s;
 }
 
 /* 深色模式 */
@@ -69,27 +95,31 @@ html.dark .friend-card,
 
 html.dark .friend-card:hover,
 .dark .friend-card:hover {
-  background: rgba(6, 182, 212, 0.08);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-  transform: translateY(-2px);
+  background: rgba(93, 193, 217, 0.1);
+  border-color: rgba(93, 193, 217, 0.3);
+  box-shadow: 
+    0 4px 12px rgba(93, 193, 217, 0.12),
+    0 2px 6px rgba(0, 0, 0, 0.15);
+  transform: translateY(-4px);
 }
 
 html.dark .friend-card:focus-visible,
 .dark .friend-card:focus-visible {
   outline: none;
   box-shadow: 
-    0 0 0 2px rgba(6, 182, 212, 0.2),
+    0 0 0 3px rgba(93, 193, 217, 0.2),
+    0 6px 16px rgba(93, 193, 217, 0.15),
     0 2px 8px rgba(0, 0, 0, 0.2);
-  background: rgba(6, 182, 212, 0.04);
-  transform: translateY(-2px);
+  background: rgba(93, 193, 217, 0.1);
+  transform: translateY(-4px);
 }
 
 html.dark .friend-card:active,
 .dark .friend-card:active {
-  transform: translateY(0);
+  transform: translateY(-1px);
 }
 
-/* logo 样式 */
+/* logo 样式 - 增强效果 */
 .card-logo {
   width: 36px;
   height: 36px;
@@ -98,27 +128,44 @@ html.dark .friend-card:active,
   flex-shrink: 0;
   border: 2px solid transparent;
   transition: 
-    transform 0.2s ease,
-    box-shadow 0.2s ease,
-    background 0.2s ease;
+    transform 0.3s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+  position: relative;
+  z-index: 2;
+}
+
+.friend-card:hover .card-logo {
+  transform: scale(1.08);
+  border-color: #5dc1d9;
+  box-shadow: 
+    0 0 0 3px rgba(93, 193, 217, 0.08),
+    0 3px 8px rgba(93, 193, 217, 0.1);
 }
 
 .friend-card:focus-visible .card-logo {
-  transform: scale(1.02);
-  box-shadow: 0 0 0 2px rgba(6, 182, 212, 0.2);
+  transform: scale(1.06);
+  box-shadow: 0 0 0 3px rgba(93, 193, 217, 0.2);
 }
 
 /* 文字容器 */
 .card-text {
   flex: 1;
+  position: relative;
+  z-index: 2;
 }
 
 .friend-name {
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 700;
   margin-bottom: 4px;
   color: inherit;
-  transition: color 0.2s ease;
+  transition: color 0.25s ease;
+  display: inline-block;
+}
+
+.friend-card:hover .friend-name {
+  color: #5dc1d9;
 }
 
 .friend-desc {
@@ -126,17 +173,17 @@ html.dark .friend-card:active,
   line-height: 1.3;
   opacity: 0.85;
   color: inherit;
-  transition: all 0.3s ease;
+  transition: 
+    opacity 0.25s ease;
 }
 
-.friend-card:hover .friend-name {
-  color: #06b6d4;
+.friend-card:hover .friend-desc {
+  opacity: 1;
 }
 
 html.dark .friend-card:hover .friend-name,
 .dark .friend-card:hover .friend-name {
-  color: #06b6d4;
-  opacity: 0.8;
+  color: #5dc1d9;
 }
 </style>
 
