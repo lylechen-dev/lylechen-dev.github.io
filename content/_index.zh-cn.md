@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', function () {
 </script>-->
 
 
-<div id="friends-links" style="margin: 20px 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 16px;"></div>
+<div id="friends-links" style="margin: 20px 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 14px;"></div>
 
 <script>
 document.addEventListener('DOMContentLoaded', function () {
@@ -83,23 +83,38 @@ document.addEventListener('DOMContentLoaded', function () {
   style.textContent = `
     /* 浅色模式 */
     .friend-card {
-      padding: 20px;
+      padding: 16px 18px;
       background: rgba(255, 255, 255, 0.6);
       backdrop-filter: blur(12px);
       -webkit-backdrop-filter: blur(12px);
       border-radius: 10px;
       border: 1px solid rgba(0, 0, 0, 0.05);
-      transition: 0.2s ease;
+      transition: all 0.2s ease;
       text-decoration: none;
       color: #111827;
       /* 关键：图片 + 文字 横向排列 */
       display: flex;
       align-items: center;
       gap: 12px;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+      transform: translateY(0);
+      transition: background 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
     }
     .friend-card:hover {
-      background: rgba(255, 255, 255, 0.8);
+      background: rgba(6, 182, 212, 0.05);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      transform: translateY(-2px);
     }
+    .friend-card:focus-visible {
+      outline: none;
+      box-shadow: 0 0 0 2px rgba(6, 182, 212, 0.25), 0 2px 8px rgba(0, 0, 0, 0.1);
+      background: rgba(6, 182, 212, 0.04);
+      transform: translateY(-2px);
+    }
+    .friend-card:active {
+      transform: translateY(0);
+    }
+
 
     /* 深色模式 */
     html.dark .friend-card,
@@ -107,20 +122,42 @@ document.addEventListener('DOMContentLoaded', function () {
       background: rgba(30, 30, 32, 0.6);
       border: 1px solid rgba(255, 255, 255, 0.05);
       color: #f3f4f6;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
     }
     html.dark .friend-card:hover,
     .dark .friend-card:hover {
-      background: rgba(40, 40, 42, 0.75);
+      background: rgba(6, 182, 212, 0.08);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+      transform: translateY(-2px);
     }
+    html.dark .friend-card:focus-visible,
+    .dark .friend-card:focus-visible {
+      outline: none;
+      box-shadow: 0 0 0 2px rgba(6, 182, 212, 0.2), 0 2px 8px rgba(0, 0, 0, 0.2);
+      background: rgba(6, 182, 212, 0.04);
+      transform: translateY(-2px);
+    }
+    html.dark .friend-card:active,
+    .dark .friend-card:active {
+      transform: translateY(0);
+    }
+
 
     /* logo 样式 */
     .card-logo {
-      width: 32px;
-      height: 32px;
-      border-radius: 6px;
+      width: 36px;
+      height: 36px;
+      border-radius: 8px;
       object-fit: cover;
       flex-shrink: 0;
+      border: 2px solid transparent;
+      transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
     }
+    .friend-card:focus-visible .card-logo {
+      transform: scale(1.02);
+      box-shadow: 0 0 0 2px rgba(6, 182, 212, 0.2);
+    }
+
 
     /* 文字容器 */
     .card-text {
@@ -130,14 +167,24 @@ document.addEventListener('DOMContentLoaded', function () {
     .friend-name {
       font-size: 16px;
       font-weight: 600;
-      margin-bottom: 6px;
+      margin-bottom: 4px;
       color: inherit;
+      transition: color 0.2s ease;
     }
     .friend-desc {
       font-size: 13px;
-      line-height: 1.4;
+      line-height: 1.3;
       opacity: 0.85;
       color: inherit;
+      transition: all 0.3s ease;
+    }
+    .friend-card:hover .friend-name {
+      color: var(--primary-color, #06b6d4);
+    }
+    html.dark .friend-card:hover .friend-name,
+    .dark .friend-card:hover .friend-name {
+      color: var(--primary-color, #06b6d4);
+      opacity: 0.7;
     }
   `;
   document.head.appendChild(style);
